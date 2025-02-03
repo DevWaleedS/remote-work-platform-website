@@ -54,3 +54,10 @@
 	font-size: 32px;
 	font-weight: 800;
 }
+
+@media screen and (max-width: 768px) {
+	.why-us-box .why-us-body p {
+		width: 95%;
+		font-size: 20px;
+	}
+}

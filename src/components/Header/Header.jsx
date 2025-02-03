@@ -84,6 +84,18 @@ const Header = () => {
 		}
 	}, [location.pathname]);
 
+	useEffect(() => {
+		if (!isShownMenu) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "unset";
+		}
+
+		return () => {
+			document.body.style.overflow = "unset";
+		};
+	}, [isShownMenu]);
+
 	// navigate to auth/login by default
 	const navigateToMerchantRegister = () => {
 		window.location.href = "https://store.atlbha.com/auth/login";

@@ -53,3 +53,11 @@
 	object-fit: cover;
 	mix-blend-mode: multiply;
 }
+
+@media screen and (max-width: 768px) {
+	.why-text-content .why-title {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 500;
+	}
+}

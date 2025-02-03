@@ -106,7 +106,7 @@ const ContactUs = () => {
 							</p>
 						</div>
 
-						<section className=' section-wrapper d-flex justify-content-center align-items-center gap-5 bg-white p-5 '>
+						<section className=' section-wrapper flex-md-row flex-column-reverse d-flex justify-content-center align-items-center gap-md-5 gap-0 bg-white p-5 '>
 							<form
 								action='#'
 								className='contact-form d-flex flex-column gap-3'>
@@ -205,13 +205,7 @@ const ContactUs = () => {
 									ارسال الطلب
 								</button>
 							</form>
-							<div className=' d-flex flex-column justify-content-center  gap-5'>
-								<SendIcon />
 
-								<EmailIcon />
-
-								<CallIcon />
-							</div>
 							<div className='contact-img-wrapper'>
 								<img src={ContactUsImg} alt='contact-us' />
 							</div>

@@ -117,47 +117,23 @@
 	color: #fff;
 }
 
-@media (max-width: 1400px) {
-	.my_hero_swiper .swiper_image {
-		height: 604px;
-	}
-}
-@media (max-width: 1200px) {
-	.my_hero_swiper .swiper_image {
-		height: 519px;
-	}
-}
-
-@media (max-width: 1024px) {
-	.my_hero_swiper .swiper_image {
-		height: 444px;
-	}
-}
-
-@media (max-width: 992px) {
-	.my_hero_swiper .swiper_image {
-		height: 430px;
-	}
-}
-
 @media (max-width: 768px) {
 	.my_hero_swiper .swiper_image {
-		background: round;
-		height: 360px;
+		height: 100vw;
 	}
 	.hero .content {
 		padding: 0 10px;
 	}
 
 	.hero .content h1 {
-		font-size: 26px;
+		font-size: 20px;
 		margin-bottom: 20px;
 	}
 
 	.hero .content p {
 		font-size: 18px;
 		text-wrap: unset;
-		margin-bottom: 0px;
+
 		width: 100%;
 		max-width: 100%;
 	}
@@ -165,29 +141,12 @@
 	.hero .content button {
 		padding: 10px 30px;
 		font-size: var(--font-size-18);
-
-		bottom: 10px;
 	}
 }
 @media (max-width: 430px) {
-	.my_hero_swiper .swiper_image {
-		height: 210px;
-		background: round;
-	}
-
-	.hero .content h1 {
-		font-size: 16px;
-		margin-bottom: 10px;
-	}
-	.hero .content p {
-		font-size: 15px;
-		margin-bottom: 35px;
-	}
-
 	.swiper-pagination-bullet {
 		width: 7px;
 		height: 7px;
-
 		border: 1px solid #fff;
 	}
 	.swiper-horizontal > .swiper-pagination-bullets,
@@ -199,21 +158,6 @@
 	.hero .content button {
 		font-size: var(--font-size-16);
 		padding: 4px 20px;
-	}
-}
-@media (max-width: 340px) {
-	.my_hero_swiper .swiper_image {
-		height: 165px;
-	}
-	.hero .content h1 {
-		margin-bottom: 2px;
-		font-size: 20px;
-	}
-	.hero .content p {
-		margin-bottom: 10px;
-	}
-	.hero .content button {
-		padding: 0px 20px;
 	}
 }
 
