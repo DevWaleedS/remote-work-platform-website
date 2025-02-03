@@ -1,0 +1,145 @@
+.business_plan__content {
+	padding-right: 70px;
+	margin-bottom: 80px;
+}
+
+.business_plan__image {
+	width: 76%;
+}
+.business_plan__title {
+	color: var(--main-color-01);
+	font-size: 34px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.business_plan__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: underline !important;
+	text-decoration-thickness: 0.2px;
+
+	text-underline-offset: 8px;
+
+	text-decoration-color: #000;
+	color: var(--main-color-01);
+	font-size: 18px;
+	font-weight: 500;
+	margin: 20px auto;
+	-moz-text-decoration-color: #000;
+	business_plan__link:hover {
+		color: var(--main-color-02);
+	}
+}
+
+.business_plan_boxes {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 3px 6px #02466a0f;
+	border: 1px solid #02466a0f;
+	background-color: #fff;
+	padding: 12px 14px;
+	height: auto;
+	min-height: 120px;
+	width: 310px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.business_plan__name {
+	display: inline-block;
+	color: #011723;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	line-height: 1.4;
+}
+
+.business_plan__description * {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #525252;
+}
+.business_plan_btn {
+	all: unset;
+	min-width: 300px;
+	height: 54px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 16px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	background-color: var(--font-color-02);
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+.business_trip_dubai {
+	background-color: var(--main-color-01);
+}
+
+.template_icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: -1;
+}
+.template_icon svg {
+	font-size: 40px;
+	color: var(--main-color-01);
+	opacity: 0.1;
+}
+
+@media (max-width: 768px) {
+	.business_plan__image {
+		width: 100%;
+	}
+	.business_plan__content {
+		padding: 0 16px;
+		width: 100%;
+	}
+
+	.business_plan__title {
+		font-size: 28px;
+		font-weight: 400;
+		margin-bottom: 18px;
+	}
+
+	.business_plan_boxes {
+		width: 98%;
+		min-height: 120px;
+		border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		-o-border-radius: 4px;
+	}
+	.business_plan__content {
+		margin-bottom: 50px;
+	}
+	.business_plan_btn {
+		width: 98%;
+		height: 50px;
+		font-weight: 500;
+		font-size: 18px;
+		text-align: center;
+		padding: 10px;
+	}
+	.business_plan_btn:first-of-type {
+		font-size: 16px;
+	}
+}

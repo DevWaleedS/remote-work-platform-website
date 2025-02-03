@@ -1,0 +1,157 @@
+.what-we-offer-section {
+	padding: 60px 0;
+}
+
+.what-we-offer-box-content h2 {
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: 12px;
+	color: var(--default-color-01);
+}
+
+.what-we-offer-box-content p {
+	font-weight: 400;
+	font-size: 24px;
+	text-wrap: balance;
+	margin-bottom: 20px;
+	color: #909090;
+}
+
+.what-we-offer-box-content button {
+	all: unset;
+	cursor: pointer;
+	background-color: var(--main-color-01);
+	color: #fff;
+	font-size: 26px;
+	font-weight: 400;
+	padding: 5px 24px;
+	transition: 0.3s all ease-in-out;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-webkit-transition: 0.3s all ease-in-out;
+	-moz-transition: 0.3s all ease-in-out;
+	-ms-transition: 0.3s all ease-in-out;
+	-o-transition: 0.3s all ease-in-out;
+}
+
+.what-we-offer-box-content button:hover {
+	background-color: var(--font-color-02);
+}
+
+.what-we-offer-boxs {
+	box-shadow: 0px 3px 6px #02466a0f;
+	border: 1px solid #02466a0f;
+	background-color: #fff;
+	padding: 18px 14px;
+	cursor: pointer;
+	height: 300px;
+	width: 300px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+.what-we-offer-boxs .what-we-offer-img {
+	width: auto;
+	height: 5rem;
+}
+.what-we-offer-boxs .offer-title {
+	font-size: 24px;
+	font-weight: 500;
+	color: var(--main-color-01);
+}
+.what-we-offer-boxs .offer-description {
+	font-size: 18px;
+	font-weight: 400;
+	color: #909090;
+	margin-bottom: 0;
+}
+
+.more-service-btn {
+	font-size: var(--font-size-20);
+	font-weight: var(--font-weight-02);
+	color: var(--main-color-01);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	cursor: pointer;
+	letter-spacing: 0.24px;
+}
+
+/* What we offer details Styles */
+.WhatWeOfferDetails {
+	text-align: center;
+}
+.WhatWeOfferDetails .box-img img {
+	width: auto;
+	height: 22rem;
+}
+
+@media (max-width: 1200px) {
+	.what-we-offer-box-content h2 {
+		font-size: 28px;
+		font-weight: 600;
+	}
+	.what-we-offer-box-content p {
+		font-size: 18px;
+	}
+
+	.what-we-offer-boxs .offer-title {
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.what-we-offer-boxs .offer-description {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 992px) {
+	.what-we-offer-box-content h2 {
+		font-size: 26px;
+	}
+	.what-we-offer-box-content p {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.what-we-offer-section {
+		padding: 40px 16px;
+	}
+	.what-we-offer-box-content h2 {
+		font-size: 26px;
+	}
+
+	.what-we-offer-boxs {
+		padding: 16px 14px;
+		height: auto;
+		width: 95%;
+		border-radius: 16px;
+		-webkit-border-radius: 16px;
+		-moz-border-radius: 16px;
+		-ms-border-radius: 16px;
+		-o-border-radius: 16px;
+	}
+
+	.what-we-offer-box-content button {
+		font-size: 18px;
+		width: 100%;
+		text-align: center;
+		font-weight: 400;
+		border-radius: 32px;
+		-webkit-border-radius: 32px;
+		-moz-border-radius: 32px;
+		-ms-border-radius: 32px;
+		-o-border-radius: 32px;
+	}
+
+	.WhatWeOfferDetails .box-img img {
+		height: 14rem;
+	}
+}

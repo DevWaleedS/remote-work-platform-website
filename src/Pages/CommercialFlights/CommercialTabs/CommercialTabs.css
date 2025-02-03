@@ -1,0 +1,32 @@
+.tabs-btn {
+	all: unset;
+	padding: 10px 20px;
+	background-color: #f3f3e5;
+	background-color: #f3f3e5;
+	color: var(--default-color-01);
+	border-radius: 6px;
+	font-size: 20px;
+	font-weight: 400;
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+.tabs-btn:is(:hover, .active__tab) {
+	background-color: #e4dc76;
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.tabs-btn {
+		font-size: 16px;
+		padding: 4px 10px;
+		border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		-o-border-radius: 4px;
+	}
+}

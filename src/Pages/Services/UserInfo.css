@@ -1,0 +1,108 @@
+.input-group .input,
+.input-group .user-info-phone-number {
+	all: unset;
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid #ddd;
+	padding: 8px 12px;
+	border-radius: 6px !important;
+	-webkit-border-radius: 6px !important;
+	-moz-border-radius: 6px !important;
+	-ms-border-radius: 6px !important;
+	-o-border-radius: 6px !important;
+}
+.input-group .input[type="email"],
+.input-group .input[type="url"] {
+	text-align: left;
+	direction: ltr;
+}
+.input-group .user-info-phone-number {
+	padding-left: 0;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 1px;
+}
+.input-group .user-info-phone-number input {
+	all: unset;
+	width: 89%;
+
+	direction: ltr;
+}
+
+.input-group .user-info-phone-number .key_code {
+	width: 11%;
+}
+
+.apply-coupon .coupon h6 {
+	cursor: pointer;
+	color: #db190b;
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+.apply-coupon .coupon-wrapper .coupon-form {
+	align-items: center;
+	border: 1px solid #1dbbbe;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	height: 42px;
+	padding: 5px;
+}
+
+.apply-coupon .coupon-wrapper .coupon-form input {
+	border: none;
+	box-shadow: none;
+	font-weight: 600;
+	height: 100%;
+	outline: none;
+	padding: 0 5px;
+}
+.apply-coupon .coupon-wrapper .coupon-form input::placeholder {
+	font-weight: 400;
+}
+
+.apply-coupon .coupon-wrapper .coupon-form button {
+	border-radius: 4px;
+	font-size: 0.9rem;
+	font-weight: 500;
+	height: 100%;
+	padding: 2px 10px;
+	fill: #ccc;
+	background: #1dbbbe;
+	border-color: #1dbbbe;
+
+	color: #fff;
+}
+
+.apply-coupon .coupon-wrapper .coupon-form button:disabled {
+	background: #ccc;
+	border-color: #ccc;
+}
+
+.coupon_box {
+	background-color: #efefef;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	margin-right: 8px;
+	padding: 4px 6px;
+}
+
+.cancel_coupon__icon {
+	all: unset;
+	cursor: pointer;
+	height: 20px;
+	margin-right: 6px;
+	width: 20px;
+}
+.cancel_coupon__icon .close__coupon_icon {
+	color: #ccc;
+	height: 18px;
+	width: 18px;
+}

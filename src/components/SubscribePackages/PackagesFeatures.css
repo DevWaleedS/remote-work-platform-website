@@ -1,0 +1,23 @@
+.package_plan_title {
+	display: flex;
+	align-items: flex-start;
+	color: #adb5b9;
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+
+.package_plan_icon {
+	display: inline-block;
+	margin-left: 0.1em;
+	color: #3ae374;
+	width: 20px;
+	height: 20px;
+}
+
+.business_plan__description * {
+	font-size: 15px;
+	font-weight: 400;
+	margin-bottom: 0;
+	color: #525252;
+}

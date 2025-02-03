@@ -1,0 +1,34 @@
+.floating-whatsapp-icon .floating-whatsapp-button {
+	right: auto;
+	left: 2rem;
+}
+.floating-whatsapp-icon .floating-whatsapp-chatbox {
+	right: auto;
+	left: 4rem;
+}
+.floating-whatsapp-icon .floating-whatsapp-chatbox header {
+	background-color: var(--main-color-01);
+}
+
+.floating-whatsapp-icon .floating-whatsapp-chatbox header img {
+	background-color: #fff;
+}
+
+.floating-whatsapp-icon .floating-whatsapp-chatbox footer form button svg {
+	fill: var(--font-color-02);
+}
+
+.floating-whatsapp-icon .floating-whatsapp-chatbox footer form input {
+	font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+	.floating-whatsapp-icon .floating-whatsapp-button {
+		right: auto;
+		left: 1.6rem;
+	}
+	.floating-whatsapp-icon .floating-whatsapp-chatbox {
+		right: auto;
+		left: 1.6rem;
+	}
+}

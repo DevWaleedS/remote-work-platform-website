@@ -1,0 +1,2622 @@
+:root {
+	/* Colors: */
+	--main-color-2: #0077ff;
+	--main-color-03: #0099fb;
+	--black-color-01: #011723;
+	--font-color-08: ##bebebe;
+	--font-color-07: #02466a1a;
+	--font-color-06: #eff9ff;
+	--font-color-05: #67747b;
+	--font-color-04: #fafafa;
+	--font-color-03: #adb5b9;
+	--font-color-02: #02466a;
+	--main-color-01: #1dbbbe;
+	--font-color-default: #fff;
+	--font-color-01: #8a9191;
+	--default-color-01: #b6be34;
+	--back-color-01: #f7fcff;
+	--back-color-02: #1dbbbe1a;
+	--back-color-03: #02466a0a;
+	--back-color-04: #f4f5f7;
+	--back-color-05: #f2f5f6;
+	--back-color-06: #adb5b919;
+	--back-color-06: #f5f8f9;
+
+	--box-shadow-01: 0px 3px 6px #0000000f;
+	--box-shadow-02: 3px 3px 6px #0000000a;
+
+	/* Font/text values */
+	--font-size-15: 15px;
+	--font-size-16: 16px;
+	--font-size-18: 18px;
+	--font-size-20: 20px;
+	--font-size-22: 22px;
+	--font-size-24: 24px;
+	--font-size-28: 28px;
+	--font-size-32: 32px;
+	--font-size-38: 38px;
+	--font-size-48: 48px;
+	--font-size-54: 54px;
+	--font-size-84: 84px;
+	--font-size-94: 94px;
+	--main-border-radius-01: 32px;
+	--main-border-radius-02: 8px;
+	--main-border-radius-16: 16px;
+	--main-border-radius-17: 17px;
+	--main-border-radius-04: 04px;
+	--font-weight-01: 300;
+	--font-weight-02: 400;
+	--font-weight-03: 500;
+	--font-weight-04: 600;
+	--font-weight-05: 700;
+
+	--transition: ease 0.3s;
+	--main-padding-top: 35px;
+	--main-padding-bottom: 35px;
+}
+
+@media (max-width: 1450px) {
+	:root {
+		--font-size-84: 48px;
+		--font-size-94: 65px;
+	}
+}
+
+@media (max-width: 992px) {
+	:root {
+		--font-size-15: 15px;
+		--font-size-16: 16px;
+		--font-size-18: 18px;
+		--font-size-20: 20px;
+		--font-size-24: 20px;
+		--font-size-28: 24px;
+		--font-size-32: 28px;
+		--font-size-38: 26px;
+		--font-size-48: 28px;
+		--font-size-54: 36px;
+		--font-size-84: 45px;
+		--font-size-94: 54px;
+		--main-padding-top: 20px;
+		--main-padding-bottom: 20px;
+	}
+
+	.bt-main {
+		padding: 8px 20px;
+	}
+}
+
+@media (max-width: 390px) {
+	:root {
+		--font-size-15: 14px;
+		--font-size-16: 15px;
+		--font-size-18: 17px;
+		--font-size-20: 18px;
+		--font-size-22: 20px;
+		--font-size-24: 22px;
+		--font-size-28: 24px;
+		--font-size-32: 25px;
+		--font-size-38: 26px;
+		--font-size-48: 28px;
+		--font-size-54: 36px;
+		--font-size-84: 45px;
+		--font-size-94: 48px;
+	}
+
+	.bt-main {
+		padding: 7px 17px;
+	}
+}
+
+/* ================================global================================== */
+
+body {
+	background-color: var(--back-color-03) !important;
+
+	overflow: auto;
+	min-height: 100vh;
+}
+
+body:has(.MuiPopover-root),
+body:has(.MuiBackdrop-root) {
+	overflow: auto !important;
+	padding-right: 0 !important;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+* {
+	font-family: "Tajawal", sans-serif !important;
+	box-sizing: border-box !important;
+	scroll-behavior: smooth !important;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ol {
+	margin: 0;
+	padding: 1rem;
+}
+
+.bt-main {
+	all: unset;
+	cursor: pointer;
+	padding: 10px 30px;
+	border-radius: var(--main-border-radius-01);
+	color: var(--back-color-01);
+	font-size: var(--font-size-24);
+	font-weight: var(--font-weight-03);
+	letter-spacing: 0.1px;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.p-main {
+	padding-top: var(--main-padding-top);
+	padding-bottom: var(--main-padding-bottom);
+}
+
+.p-main-products-swiber {
+	padding-top: var(--main-padding-top);
+	padding-bottom: var(--main-padding-bottom);
+}
+
+@media (min-width: 1400px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		max-width: 1440px !important;
+	}
+}
+
+.app {
+	max-width: 1920px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+body ul.MuiList-root {
+	max-height: 300px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--back-color-03);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--main-color-01);
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+.brands {
+	width: 100%;
+	height: 100%;
+	background-color: #02466a0a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.brands .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.brands .content .title {
+	position: relative;
+	margin: 30px 0;
+}
+
+.brands .content .title::before {
+	content: "";
+	position: absolute;
+	width: 105%;
+	height: 40px;
+	bottom: 12px;
+	left: 50%;
+	background-color: #b6be34;
+	z-index: -1;
+	transform: translateX(-50%);
+}
+
+.brands .content .title h5 {
+	font: normal normal bold 42px/67px Tajawal;
+	letter-spacing: 0px;
+	color: #011723;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.brands .content .sub-title {
+	max-width: 1100px;
+	font: normal normal 500 32px/50px Tajawal;
+	letter-spacing: 0px;
+	color: #02466a;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.brands .content .desc {
+	font: normal normal 500 28px/45px Tajawal;
+	letter-spacing: 0px;
+	color: #000000;
+	text-align: center;
+	margin: 0;
+}
+
+.brands .footer-brands {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+}
+
+.brands .footer-brands h3 {
+	font: normal normal bold 48px/110px Tajawal;
+	letter-spacing: 0px;
+	color: #f7fcff;
+	text-shadow: 0px 3px 6px #00000052;
+	text-align: center;
+}
+
+.atlbha-academy {
+	width: 100%;
+	height: 100%;
+	background-color: #02466a0a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.atlbha-academy .content {
+	padding: 0 3rem;
+	margin-bottom: 3rem;
+}
+
+/* academy-content */
+.atlbha-academy .content .academy-content {
+	font: normal normal 500 22px/32px Tajawal;
+	letter-spacing: 0.44px;
+	color: #011723;
+	text-align: center;
+	margin-bottom: 40px;
+	text-wrap: balance;
+}
+
+.atlbha-academy .content .box {
+	width: 100%;
+	background-color: #ffffff;
+	box-shadow: 0px 3px 6px #1dbbbe1a;
+	border-radius: 8px;
+}
+
+.atlbha-academy .content .box .desc {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.atlbha-academy .content .box .desc p {
+	font: normal normal normal 20px/28px Tajawal;
+	letter-spacing: 0px;
+	color: #02466a;
+	text-align: right;
+	margin-bottom: 0;
+}
+
+.atlbha-academy .content .box .image {
+	position: relative;
+	width: 100%;
+	min-height: 375px;
+	max-height: 375px;
+	overflow: hidden;
+}
+
+.atlbha-academy .content .box .image .bg-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.atlbha-academy .content .box .image .main-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.atlbha-academy .content .box .image p {
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+	margin: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	font: normal normal bold 22px/30px Tajawal;
+	letter-spacing: 0.56px;
+	color: #f7fcff;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 0 1rem;
+}
+
+.commercial-flights {
+	width: 100%;
+	height: 100%;
+	background-color: #02466a0a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* .commercial-flights .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 2rem;
+} */
+
+.commercial-flights .content .options {
+	position: sticky;
+	top: 25%;
+}
+
+.commercial-flights .content .options .nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: #e4dc76;
+	border-radius: 24px;
+	gap: 10px;
+	padding: 1rem;
+}
+
+.commercial-flights .content .options .nav .nav-link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 8px;
+	padding: 0;
+	color: #052638 !important;
+	text-decoration: underline !important;
+}
+
+.commercial-flights .content .options .nav .nav-link.active {
+	color: #ffffff !important;
+	background-color: transparent !important;
+	text-decoration: none !important;
+}
+
+.commercial-flights .content .title {
+	width: fit-content;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin: auto;
+}
+
+.commercial-flights .content .title h1 {
+	font: normal normal bold 36px/53px Tajawal;
+	letter-spacing: 0px;
+	color: #200407;
+	text-align: center;
+}
+
+.commercial-flights .content .title .register {
+	color: #a1182f;
+}
+
+.commercial-flights .content .title svg {
+	position: absolute;
+	top: -12px;
+	left: -45px;
+}
+
+.commercial-flights .content .title p {
+	width: 80%;
+
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0px;
+	color: #200407;
+	text-align: center;
+}
+
+.commercial-flights .content .bg {
+	width: 80%;
+	height: 220px;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 36px auto 20px;
+}
+
+.commercial-flights .content .desc {
+	max-width: 850px;
+	text-align: center;
+	font: normal normal 500 22px/33px Tajawal;
+	letter-spacing: 0px;
+	color: #200407;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+.commercial-flights .content .desc span {
+	background-color: #6edee0;
+}
+
+.commercial-flights .content .sub-title {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 3px 10px;
+	margin: auto;
+	margin-bottom: 26px;
+	background-color: #02466a;
+}
+
+.commercial-flights .content .tab-content .sub-title h6 {
+	font: normal normal bold 28px/42px Tajawal;
+	letter-spacing: 0.56px;
+	color: #f7fcff;
+	text-align: center;
+	margin: 0;
+}
+
+.commercial-flights .content .tab-content .video {
+	max-width: 100%;
+	width: 800px;
+	height: 390px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #c6c6c6;
+	border-radius: 8px;
+	margin: auto;
+	margin-bottom: 54px;
+}
+
+.commercial-flights .content .tab-content .video img {
+	cursor: pointer;
+}
+
+/* Business Flights  Features */
+.business_flights_features {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+
+.business_flights_features .box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 32.4%;
+}
+
+.business_flights_features .box h3 {
+	font: 600 20px/30px Tajawal;
+	letter-spacing: 0.48px;
+	color: #011723;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.business_flights_features .box .cont {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+}
+
+.business_flights_features .box .cont .img {
+	width: 100%;
+	height: 280px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff783;
+}
+
+.business_flights_features .box .cont ul {
+	list-style: inside;
+	padding: 10px 14px 10px 10px;
+	min-height: 225px;
+}
+
+.business_flights_features .box .cont li {
+	font: normal normal 500 16px/22px Tajawal;
+	letter-spacing: 0px;
+	margin-bottom: 4px;
+	color: #200407;
+}
+
+.business_flights_features .box .cont li svg {
+	min-width: 20px;
+	max-width: 20px;
+	height: 20px;
+}
+
+/* end of features */
+
+/* start package courses */
+
+.course_box_info {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+	gap: 14px;
+	margin: 60px 40px;
+}
+
+.course_box_info .course__wrapper {
+	cursor: pointer;
+	max-width: 100%;
+	max-height: 290px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+	transition: box-shadow 0.1s ease-in-out;
+	-webkit-transition: box-shadow 0.1s ease-in-out;
+	-moz-transition: box-shadow 0.1s ease-in-out;
+	-ms-transition: box-shadow 0.1s ease-in-out;
+	-o-transition: box-shadow 0.1s ease-in-out;
+}
+.course_box_info .course__wrapper:hover {
+	box-shadow: var(--box-shadow-01);
+}
+.course_box_info .course__wrapper .course__img {
+	border-radius: 7px 7px 1px 1px;
+	-webkit-border-radius: 7px 7px 1px 1px;
+	-moz-border-radius: 7px 7px 1px 1px;
+	-ms-border-radius: 7px 7px 1px 1px;
+	-o-border-radius: 7px 7px 1px 1px;
+	max-width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.course_box_info .course__wrapper .course__title {
+	color: var(--main-color-01);
+	font-size: 22px;
+	font-weight: 400;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.course_box_info .course__wrapper:hover .course__title {
+	color: var(--font-color-02);
+}
+/* end package courses */
+/* start course details  */
+.course__details_page {
+	padding: 0 60px;
+}
+
+.course__details_page .course-box {
+	width: 90%;
+	margin: 0 auto;
+}
+.course__details_page .course-box .course_img {
+	max-width: 60%;
+	margin: 20px auto 40px;
+}
+.course__details_page .course-box .course_img img {
+	border-radius: 14px;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	-ms-border-radius: 14px;
+	-o-border-radius: 14px;
+	box-shadow: var(--box-shadow-01);
+}
+.course__details_page .course-box .course_title {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	color: var(--main-color-01);
+	font-size: 28px;
+	font-weight: 500;
+}
+
+.course__details_page .course-box .description_content {
+	margin-bottom: 12px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.8;
+}
+
+.course__details_page .course-box .btn-wrapper {
+	width: 100%;
+	margin: 0 auto 40px;
+	display: flex;
+	justify-content: center;
+}
+.course__details_page .course-box .btn-wrapper .subscribe_btn {
+	all: unset;
+	cursor: pointer;
+	color: var(--main-color-01);
+	font-size: 20px;
+	font-weight: 400;
+}
+.course__details_page .course-box .subscribe_btn:is(:hover) {
+	text-decoration: underline;
+}
+/* end course details  */
+
+.commercial-flights .content .tab-content .videos {
+	margin-top: 40px;
+}
+
+.commercial-flights .content .tab-content .videos .boxes {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	height: 500px;
+}
+
+.commercial-flights .content .tab-content .videos .h-380 {
+	height: 380px;
+	overflow-y: auto;
+}
+
+.commercial-flights .content .tab-content .videos .h-350 {
+	height: 335px;
+}
+
+.commercial-flights .content .tab-content .videos .h-380::-webkit-scrollbar {
+	width: 0;
+}
+
+.commercial-flights .content .tab-content .videos .boxes .video-box {
+	width: 190px;
+	height: 160px;
+}
+
+.commercial-flights .content .tab-content .videos .boxes .video-box img {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.commercial-flights .content .tab-content .videos .arrow {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.commercial-flights .content .tab-content .videos .arrow img {
+	cursor: pointer;
+}
+
+.commercial-flights .content .tab-content .videos .arrow .down {
+	transform: rotate(180deg);
+}
+
+.commercial-flights .content .tab-content .resigter {
+	border: none;
+	background-color: #e62237;
+	box-shadow: 0 3px 6px #ffde063d;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0;
+	padding: 14px 50px;
+	margin: 2.5rem auto 1.2rem;
+	font: normal normal 500 20px/26px Tajawal;
+	border-radius: 28px;
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	-ms-border-radius: 28px;
+	-o-border-radius: 28px;
+}
+
+.commercial-flights .content .tab-content .packages {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+	margin-top: 40px;
+	margin-bottom: 98px;
+}
+
+.commercial-flights .content .tab-content .packages .package {
+	min-width: 350px;
+	max-width: 444px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 2px 6px 12px #a1182f29;
+}
+
+.commercial-flights .content .tab-content .packages .package .title {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	background-color: #a1182f;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+.commercial-flights .content .tab-content .packages .package .title.title-1 {
+	background-color: #cdc10d;
+}
+
+.commercial-flights .content .tab-content .packages .package .title h6 {
+	font: 500 24px/30px Tajawal;
+	letter-spacing: 0px;
+	color: #ffffff;
+	margin: 0;
+}
+
+.commercial-flights .content .tab-content .packages .package .title.title-1 h6 {
+	color: #200407;
+}
+
+.commercial-flights .content .tab-content .packages .package .body {
+	padding: 1rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.commercial-flights .content .tab-content .packages .package .body ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 14px;
+}
+
+.commercial-flights .content .tab-content .packages .package .body ul li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	font: normal normal 500 16px/22px Tajawal;
+	letter-spacing: 0px;
+	color: #200407;
+}
+
+.commercial-flights .content .tab-content .packages .package .body ul li svg {
+	min-width: 20px;
+	max-width: 20px;
+	height: 20px;
+}
+
+.commercial-flights .content .tab-content .packages .package button {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	padding: 10px;
+	background: #200407;
+	color: #ffffff;
+	font: 500 18px/25px Tajawal;
+	letter-spacing: 0px;
+	border-radius: 4px;
+	margin: 0;
+	margin-top: 2rem;
+}
+
+.commercial-flights .content .tab-content .packages .package button span {
+	font: normal normal bold 20px/29px Tajawal;
+}
+
+.commercial_flights_questions {
+	padding: 2rem 1rem;
+}
+
+.commercial_flights_questions .accordion-item {
+	border: none;
+}
+
+.commercial_flights_questions .accordion-item .accordion-body {
+	padding: 0;
+}
+
+.commercial_flights_questions .accordion-item .accordion-header {
+	height: 70px;
+}
+
+.commercial_flights_questions
+	.accordion-item
+	.accordion-header
+	.accordion-button {
+	font-size: 20px;
+	font-weight: 500;
+	height: 100%;
+	padding: 20px;
+	margin: 0;
+	background-color: #ffffff;
+	color: #011723;
+	box-shadow: none;
+	display: flex;
+	text-align: right;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.commercial_flights_questions
+	.accordion-item
+	.accordion-header
+	.accordion-button::after {
+	margin: 0;
+}
+
+.commercial_flights_questions
+	.accordion-body
+	.accordion-item
+	.accordion-header {
+	height: 56px;
+	background-color: var(--main-color-01);
+}
+
+.commercial_flights_questions
+	.accordion-body
+	.accordion-item
+	.accordion-header
+	.accordion-button {
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.commercial_flights_questions
+	.accordion-body
+	.accordion-item
+	.accordion-header
+	.accordion-button::after {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(325deg)
+		brightness(109%) contrast(101%);
+}
+
+.commercial_flights_questions
+	.accordion-item
+	.accordion-body
+	.accordion-item
+	.accordion-body {
+	padding: 1rem 1rem 2rem;
+	background-color: var(--font-color-06);
+}
+
+.commercial-flights .content .tab-content .register-remaining {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.commercial-flights .content .tab-content .register-remaining h6 {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	background-color: #ffde06;
+	color: #e62237;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 4px;
+}
+
+.commercial-flights .content .tab-content .register-remaining svg {
+	cursor: pointer;
+}
+
+.commercial-flights .content .tab-content .register-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	margin-top: 40px;
+}
+
+.commercial-flights .content .tab-content .register-form .input-group {
+	width: 100%;
+	min-height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	padding: 0.5rem 1.2rem;
+	background-color: #ffffff;
+	box-shadow: 0px 3px 6px #00000029;
+	border-radius: 10px;
+	gap: 5px;
+}
+
+.commercial-flights .content .tab-content .register-form .input-group label {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	gap: 4px;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0px;
+	color: #707070;
+}
+
+.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.input-group
+	label.MuiFormControlLabel-root {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 4px;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0px;
+	color: #707070;
+}
+
+.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.input-group
+	span.MuiTypography-root
+	.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.input-group
+	label
+	span {
+	color: #ff3838;
+	font-size: 1.2rem;
+}
+
+.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.input-group
+	.MuiFormControl-root {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.input-group
+	.MuiFormControl-root
+	.MuiInputBase-input.MuiOutlinedInput-input {
+	padding-left: 32px;
+	padding-right: 10px;
+}
+
+.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.input-group
+	.MuiFormControl-root
+	label {
+	left: auto;
+	transform-origin: top right;
+}
+
+.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.input-group
+	.MuiInputBase-root::after {
+	border-bottom: 2px solid #ffde06;
+}
+
+.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.input-group
+	.MuiFormControl-root
+	.MuiOutlinedInput-notchedOutline {
+	border: 1px solid #c6c6c6;
+}
+
+.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.input-group
+	.MuiInputBase-root {
+	height: 100%;
+}
+
+.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.input-group
+	.MuiInputBase-root
+	.MuiSelect-icon {
+	left: 7px;
+	right: unset;
+	color: #c6c6c6;
+}
+
+/*  */
+.input_style {
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 8px;
+}
+
+.input_style:focus {
+	outline: none;
+}
+
+.input_style::placeholder {
+	color: #c6c6c6;
+}
+
+.commercial-flights .content .tab-content .register-form p {
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #ff9f1a;
+	margin-bottom: 14px;
+}
+
+.commercial-flights .content .tab-content .register-form .condition {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 10px;
+	gap: 10px;
+}
+
+.commercial-flights .content .tab-content .register-form .condition button {
+	min-width: auto;
+	width: auto;
+	height: auto;
+	border: none;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-decoration: underline;
+	color: #1a5fff;
+	background-color: transparent;
+	cursor: pointer;
+	box-shadow: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.commercial-flights
+	.content
+	.tab-content
+	.register-form
+	.condition
+	button:disabled {
+	color: #1a5fff;
+	background-color: transparent;
+	cursor: not-allowed;
+}
+
+.commercial-flights .content .tab-content .register-form button {
+	min-width: 536px;
+	height: 56px;
+	background-color: #011723;
+	box-shadow: 4px 6px 10px #00000029;
+	border-radius: 28px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #f7fcff;
+	margin: auto;
+	border: none;
+	margin-top: 0.5rem;
+}
+
+.commercial-flights .content .tab-content .register-form button:disabled {
+	background-color: #c6c6c6;
+	color: #707070;
+}
+
+.item_select:hover {
+	background-color: #ffc9d2 !important;
+}
+
+.item_select.Mui-selected {
+	color: #ffffff !important;
+	background-color: #e62237 !important;
+}
+
+.commercial-flights-bg-modal {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #000000ab;
+	z-index: 999;
+}
+
+.commercial-flights-bg-modal .commercial-flights-modal {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 812px;
+	max-width: 90%;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	z-index: 99999;
+}
+
+.commercial-flights-bg-modal .commercial-flights-modal .header {
+	width: 100%;
+	min-height: 56px;
+	max-height: 56px;
+	background-color: #ffde06;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1.2rem;
+}
+
+.commercial-flights-bg-modal .commercial-flights-modal .header h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #200407;
+	margin: 0;
+}
+
+.commercial-flights-bg-modal .commercial-flights-modal .header svg {
+	margin-right: auto;
+	cursor: pointer;
+}
+
+.commercial-flights-bg-modal .commercial-flights-modal .body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1rem 2rem;
+	height: 520px;
+	overflow: auto;
+}
+.commercial-flights-bg-modal .commercial-flights-modal .body ul {
+	list-style: initial;
+}
+
+.commercial-flights-bg-modal .commercial-flights-modal .body li {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.commercial-flights-bg-modal .commercial-flights-modal .body p {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.commercial-flights-bg-modal .commercial-flights-modal .body p span {
+	color: #e62237;
+	font-weight: 500;
+	margin-left: 2px;
+}
+
+.commercial-flights-bg-modal .commercial-flights-modal .body button {
+	max-width: 100%;
+	width: 358px;
+	min-height: 56px;
+	background-color: #200407;
+	border: 1px solid #707070;
+	border-radius: 28px;
+	color: #ffffff;
+	font-size: 1.1rem;
+	font-weight: 500;
+	margin: 0 auto;
+}
+
+.video-container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.video-container video {
+	width: 100%;
+	height: 100%;
+}
+
+.video-container button {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+	border: none;
+	margin: 0;
+}
+
+.services {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #02466a0a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.services .boxes {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	flex-wrap: wrap;
+	gap: 1.75rem;
+	margin-bottom: 1.75rem;
+	padding: 0 1rem;
+}
+
+.services .boxes .box {
+	position: relative;
+	width: 325px;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background: #1dbbbe;
+	border-radius: 4px;
+	padding: 10px 20px;
+}
+
+.services .boxes .box.selected {
+	background: #02466a;
+	border: 2.5px solid #b6be34;
+}
+
+.services .boxes .box p {
+	text-align: center;
+	font: normal normal 500 22px/28px Tajawal;
+	letter-spacing: 0px;
+	color: #02466a;
+	margin-bottom: 0;
+}
+
+.services .boxes .box.selected .service-title {
+	color: #f7fcff;
+}
+
+.services .boxes .box .star-icon {
+	width: 100%;
+	position: absolute;
+	left: -11px;
+	top: -9px;
+	direction: ltr;
+}
+
+.services .boxes .box .star-icon img {
+	width: 24px;
+	height: 24px;
+}
+
+.services .boxes .box .arrow {
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.services .boxes .box .arrow svg {
+	color: #ffffff;
+}
+
+.services .boxes .box.selected .arrow svg {
+	transform: rotate(180deg);
+}
+
+.services .boxes .detalis {
+	position: absolute;
+	width: 98%;
+	display: flex;
+	flex-direction: column;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 127px;
+	background-color: #f7fcff;
+	box-shadow: 0px 3px 6px #00000029;
+	border-radius: 4px;
+	z-index: 99;
+	transition: all 1s ease-out;
+}
+
+.services .boxes .detalis img {
+	width: 100%;
+	min-height: 140px;
+	position: unset;
+}
+
+.services .boxes .detalis .service_mobile_image {
+	display: none;
+}
+
+.services .boxes .detalis .desc {
+	padding: 20px;
+}
+
+.services .boxes .detalis .desc * {
+	font: normal normal normal 18px/26px Tajawal;
+	letter-spacing: 0px;
+	color: #02466a;
+	text-wrap: balance;
+	text-align: right;
+}
+
+.services .boxes .box.box-16 {
+	max-width: 250px;
+}
+
+.services-btn-container .service-price {
+	cursor: default;
+	font-size: 16px;
+	width: 40%;
+	padding: 4px 8px;
+	font-weight: 500;
+	color: #1dbbbe;
+	border: 1px solid #1dbbbe;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+.services-btn-container .service-price .currency {
+	font-size: 14px;
+	font-weight: 400;
+}
+.services-btn-container .order-service-btn {
+	all: unset;
+
+	width: 60%;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px 8px;
+	background-color: #1dbbbe;
+	border: 1px solid #1dbbbe;
+	color: #fff;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	transition: 0.2s ease-in-out;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-ms-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+}
+.services-btn-container .order-service-btn:hover {
+	background-color: #02466a;
+	border: 1px solid #02466a;
+}
+
+/* Contact us pages */
+.contact-us .content {
+	flex-direction: row;
+}
+
+.contact-us .content .contact-info {
+	flex: 2;
+}
+
+.contact-us .content .contact-form-wrapper {
+	flex: 4;
+}
+
+.contact-us .content .register-form {
+	padding: 30px 40px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+.contact-us .content .form-title {
+	background: #02466a;
+	font-size: 22px;
+	font-weight: 400;
+	letter-spacing: 0.44px;
+	color: #f7fcff;
+	height: 70px;
+	border-radius: 24px 24px 0px 0px;
+	opacity: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0;
+}
+
+.contact-us .content .contact-form .input-group {
+	gap: 12px;
+}
+
+.contact-us .content .contact-form .input-group label {
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.36px;
+	color: #011723;
+	opacity: 1;
+}
+
+.contact-us .content .contact-form .input-group input {
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	padding-bottom: 8px;
+	letter-spacing: 0.32px;
+	background-color: transparent;
+	color: #011723;
+	border-bottom: 1px solid #afb4b6;
+}
+
+.contact-us .content .contact-form .input-group input::placeholder {
+	color: #afb4b6;
+}
+
+.contact-us .content .contact-form button {
+	border: unset;
+	outline: unset;
+
+	margin-top: 30px;
+	width: 100%;
+	height: 56px;
+	background-color: var(--main-color-01);
+
+	color: #fff;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+}
+
+.contact-us .content .contact-form button:disabled {
+	cursor: not-allowed;
+	background-color: transparent;
+	color: #011723;
+	border: 1px solid #011723;
+}
+
+.contact-us .content .contact-info h4 {
+	background: linear-gradient(to right, #1cbbbe, #065978);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-size: 32px;
+	font-weight: 600;
+	-webkit-text-decoration: underline wavy #1dbbbe1a;
+	text-decoration: underline wavy #1dbbbe1a;
+	text-underline-offset: 12px;
+	margin-bottom: 20px;
+}
+
+.contact-us .content .contact-info p {
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0.44px;
+	color: #011723;
+	margin-bottom: 60px;
+}
+
+.contact-us .content .contact-info .icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.contact-us .content .contact-info .icons .group-one,
+.contact-us .content .contact-info .icons .call-icon {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 100px;
+}
+
+.contact-us .content .contact-info .icons .group-one {
+	margin-bottom: 40px;
+}
+
+.contact-us .content .contact-info .icons .call-icon {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Faqs */
+
+.faqs {
+	padding: 0rem 1.8rem 5rem;
+}
+
+.faqs .MuiAccordion-root.Mui-expanded {
+	margin: 0 !important;
+}
+
+.faqs .MuiPaper-root .MuiAccordionSummary-root {
+	background-color: #1dbbbe;
+	color: #ffffff;
+	border: none;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+}
+
+.faqs .MuiPaper-root .MuiAccordionSummary-root svg {
+	fill: #ffffff;
+}
+
+.faqs .MuiPaper-root .MuiAccordionSummary-root.Mui-expanded {
+	min-height: 48px;
+}
+
+.faqs .MuiPaper-root .MuiAccordionSummary-content.Mui-expanded {
+	margin: 0;
+}
+.faqs .MuiPaper-root .MuiAccordionSummary-content h6 {
+	font-size: 1.1rem;
+	color: #ffffff;
+	margin: 0;
+}
+.faqs .MuiAccordionDetails-root {
+	padding: 8px;
+}
+.faqs .MuiAccordionDetails-root p {
+	font-size: 1rem;
+	color: #000000;
+	margin: 0;
+}
+
+@media (max-width: 1418px) {
+	.services .boxes .box.box-5 .detalis,
+	.services .boxes .box.box-10 .detalis,
+	.services .boxes .box.box-15 .detalis {
+		top: 275px;
+	}
+
+	.services .boxes .box .detalis .service_mobile_image {
+		display: none;
+	}
+
+	.business_flights_features .box {
+		min-width: 285px;
+		flex: 1;
+	}
+}
+
+@media (max-width: 1400px) {
+	.business_flights_features .box {
+		flex: auto;
+	}
+
+	.atlbha-academy .content .box .image {
+		min-height: 300px;
+		max-height: 300px;
+	}
+
+	.atlbha-academy .content .box .image p {
+		font: normal normal bold 20px/24px Tajawal;
+	}
+
+	.services .boxes .box .detalis .service_mobile_image {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.atlbha-academy .content .box .image {
+		min-height: 240px;
+		max-height: 240px;
+	}
+
+	.commercial-flights .content .plane {
+		height: 210px;
+	}
+
+	.commercial-flights .content .plane-row {
+		gap: 4rem;
+	}
+
+	.services .boxes .box.box-4 .detalis,
+	.services .boxes .box.box-9 .detalis,
+	.services .boxes .box.box-14 .detalis {
+		top: 275px;
+	}
+
+	.services .boxes .box.box-16 {
+		max-width: none;
+	}
+
+	.services .boxes .box .detalis .service_mobile_image {
+		display: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.brands .content .title::before {
+		height: 22px;
+	}
+
+	.brands .content .title h5 {
+		font: normal normal bold 40px/60px Tajawal;
+	}
+
+	.brands .content .sub-title {
+		font: normal normal 500 30px/52px Tajawal;
+	}
+
+	.brands .content .desc {
+		font: normal normal 500 30px/52px Tajawal;
+	}
+
+	.atlbha-academy .content .academy-content {
+		font: normal normal 500 20px/30px Tajawal;
+	}
+
+	.atlbha-academy .content .box .image {
+		min-height: 170px;
+		max-height: 170px;
+	}
+
+	.atlbha-academy .content .box .image p {
+		font: normal normal bold 16px/20px Tajawal;
+		bottom: 20px;
+	}
+
+	.commercial-flights .content .plane {
+		height: 150px;
+	}
+
+	.commercial-flights .content .plane-row {
+		gap: 2rem;
+	}
+
+	.commercial-flights .content .plane-row .plane-col .flight-sides .title h6 {
+		font: normal normal bold 24px/34px Tajawal;
+	}
+
+	.commercial-flights .content .plane-row .plane-col .flight-sides p {
+		font: normal normal 500 14px/18px Tajawal;
+	}
+
+	.commercial-flights .content .plane-row .plane-col .flight-sides ul li span {
+		font: normal normal 500 14px/18px Tajawal;
+	}
+
+	.commercial-flights .content .plane-row .plane-col .flight-sides ul li p {
+		font: normal normal 500 14px/18px Tajawal;
+	}
+
+	.commercial-flights .content .plane-row .plane-col .plane-box p {
+		font: normal normal normal 18px/26px Tajawal;
+	}
+
+	.commercial-flights .content .plane-row .plane-col .plane-box span {
+		font: normal normal normal 18px/26px Tajawal;
+	}
+
+	.commercial-flights
+		.content
+		.plane-row
+		.plane-col
+		.flight-features
+		.title
+		h6 {
+		font: normal normal bold 24px/34px Tajawal;
+	}
+
+	.commercial-flights
+		.content
+		.plane-row
+		.plane-col
+		.flight-features
+		ul
+		li
+		img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.commercial-flights .content .register-form {
+		padding: 20px 3rem;
+	}
+
+	.commercial-flights .content .register-form p {
+		font: normal normal 500 22px/24px Tajawal;
+	}
+
+	.commercial-flights .content .register-form .input-group label {
+		font: normal normal normal 16px/26px Tajawal;
+	}
+	.services .boxes {
+		justify-content: center;
+	}
+	.services .boxes .box {
+		width: 45%;
+	}
+	.services .boxes .box.box-3 .detalis,
+	.services .boxes .box.box-8 .detalis,
+	.services .boxes .box.box-13 .detalis {
+		top: 275px;
+	}
+
+	.services .boxes .box.box-5 .detalis,
+	.services .boxes .box.box-10 .detalis,
+	.services .boxes .box.box-15 .detalis {
+		top: 422px;
+	}
+
+	.services .boxes .box .detalis .service_mobile_image {
+		display: none;
+	}
+	.faqs {
+		padding: 2rem 4rem 4rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.brands .content .title::before {
+		height: 16px;
+		bottom: 5px;
+	}
+
+	.brands .content .title h5 {
+		font: normal normal bold 30px/40px Tajawal;
+	}
+
+	.brands .content .sub-title {
+		font: normal normal 500 24px/42px Tajawal;
+	}
+
+	.brands .content .desc {
+		font: normal normal 500 24px/42px Tajawal;
+	}
+
+	.atlbha-academy .content {
+		padding: 0;
+	}
+
+	.atlbha-academy .content .academy-content {
+		font: normal normal 500 18px/28px Tajawal;
+	}
+
+	.atlbha-academy .content .box .image {
+		min-height: 100%;
+		max-height: 100%;
+	}
+
+	.atlbha-academy .content .box .desc p {
+		font: normal normal 500 18px/28px Tajawal;
+	}
+
+	/* Contact us page */
+	.contact-us .content {
+		flex-direction: column;
+	}
+
+	.contact-us .content .contact-info h4 {
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	.contact-us .content .contact-info p {
+		font-size: 18px;
+		font-weight: 400;
+		margin-bottom: 28px;
+	}
+
+	.contact-us .content .contact-info .icons {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.contact-us .content .contact-info .icons .group-one {
+		margin-bottom: 0;
+		gap: 50px;
+	}
+
+	.contact-us .content .contact-info .icons .call-icon {
+		width: 30%;
+	}
+
+	.contact-us .content .contact-info .icons svg {
+		width: 40px;
+	}
+
+	/* ---------------- */
+	.contact-us .content .form-title {
+		font-size: 20px;
+		font-weight: 400;
+
+		height: 60px;
+		border-radius: 18px 18px 0px 0px;
+	}
+
+	.services .boxes {
+		position: unset;
+		justify-content: center;
+	}
+
+	.services .boxes .box,
+	.services .boxes .box .detalis {
+		width: 100%;
+	}
+
+	.services .boxes .box .detalis .desc p {
+		font: normal normal normal 18px/24px Tajawal;
+	}
+
+	.services .boxes .box.box-3 .detalis,
+	.services .boxes .box.box-4 .detalis,
+	.services .boxes .box.box-5 .detalis,
+	.services .boxes .box.box-8 .detalis,
+	.services .boxes .box.box-9 .detalis,
+	.services .boxes .box.box-10 .detalis,
+	.services .boxes .box.box-13 .detalis,
+	.services .boxes .box.box-14 .detalis,
+	.services .boxes .box.box-15 .detalis {
+		top: 127px;
+	}
+
+	.services .boxes .box .detalis img {
+		height: 100%;
+		min-height: 100%;
+	}
+
+	.services .boxes .box .detalis .service_desktop_image {
+		display: none;
+	}
+
+	.services .boxes .box .detalis .service_mobile_image {
+		display: block;
+	}
+
+	/* start package courses */
+	.course_box_info {
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		gap: 20px;
+		margin: 60px 0;
+	}
+
+	.course_box_info .course__wrapper .course__title {
+		font-size: 20px;
+	}
+
+	/* course details */
+	.course__details_page {
+		padding: 0 10px;
+	}
+
+	.course__details_page .course-box {
+		width: 98%;
+		margin: 0 auto;
+	}
+	.course__details_page .course-box .course_img {
+		max-width: 100%;
+	}
+	.course__details_page .course-box .course_img img {
+		border-radius: 12px;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		-ms-border-radius: 12px;
+		-o-border-radius: 12px;
+	}
+	.course__details_page .course-box .course_title {
+		font-size: 22px;
+		font-weight: 400;
+	}
+
+	.course__details_page .course-box .description_content {
+		font-size: 18px;
+	}
+
+	.commercial-flights .content .title h1 {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		font-weight: 700;
+	}
+
+	.commercial-flights .content .title p {
+		font-size: 22px;
+	}
+
+	.commercial-flights .content .title svg {
+		width: 20px;
+		height: 20px;
+		top: -4px;
+		left: -21px;
+	}
+
+	.commercial-flights .content .bg {
+		height: auto;
+		width: 100%;
+		margin-top: 1rem;
+	}
+
+	.commercial-flights .content .tab-content .desc {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.commercial-flights .content .tab-content .sub-title h6 {
+		font-size: 22px;
+	}
+
+	.commercial-flights .content .tab-content .video {
+		height: 300px;
+		margin-bottom: 20px;
+	}
+
+	.commercial-flights .content .tab-content .register-form {
+		padding: 0;
+	}
+
+	.commercial-flights .content .tab-content .register-form p {
+		font-size: 1rem;
+	}
+
+	.commercial-flights .content .tab-content .register-form .condition button {
+		font-size: 1rem;
+	}
+
+	.commercial-flights .content .tab-content .register-form button {
+		min-width: 100%;
+		height: 48px;
+	}
+
+	.business_flights_features {
+		margin-bottom: 10px;
+	}
+
+	.business_flights_features .box .cont ul {
+		min-height: auto;
+	}
+
+	.commercial-flights .content .tab-content .packages .package {
+		min-width: 100%;
+		max-width: none;
+	}
+	.faqs {
+		padding: 1rem 3rem 3rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.brands .content .title {
+		margin: 2rem 0;
+	}
+
+	.brands .content .title::before {
+		width: 102%;
+		height: 12px;
+		bottom: 2px;
+	}
+
+	.brands .content .title h5 {
+		font: normal normal bold 20px/26px Tajawal;
+	}
+
+	.brands .content .sub-title {
+		font: normal normal 500 18px/36px Tajawal;
+		margin-bottom: 20px;
+	}
+
+	.brands .content .desc {
+		font: normal normal 500 18px/36px Tajawal;
+	}
+
+	.brands .footer-brands {
+		height: 300px;
+		margin-top: 4rem;
+	}
+
+	.brands .footer-brands h3 {
+		font: normal normal bold 32px/42px Tajawal;
+	}
+
+	.atlbha-academy .content .box .desc {
+		padding: 1rem;
+	}
+
+	.atlbha-academy .content .box .desc p {
+		font: normal normal 500 16px/22px Tajawal;
+	}
+
+	.services .boxes .box .detalis .desc p {
+		font: normal normal normal 16px/20px Tajawal;
+	}
+
+	.commercial-flights .content .title svg {
+		top: -20px;
+		left: -5px;
+	}
+
+	.commercial-flights .content .title p {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		font-weight: 500;
+	}
+
+	.commercial-flights .content .tab-content .desc {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		font-weight: 500;
+	}
+
+	.commercial-flights .content .tab-content .sub-title h6 {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		font-weight: 700;
+	}
+
+	.commercial-flights .content .tab-content .video {
+		height: 190px;
+	}
+
+	.business_flights_features .box {
+		align-items: flex-start;
+		filter: drop-shadow(0 3px 6px #0000000f);
+	}
+
+	.business_flights_features .box h6 {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		font-weight: 700;
+	}
+
+	.business_flights_features .box .cont .img {
+		height: 180px;
+	}
+
+	.business_flights_features .box .cont li {
+		font-size: 18px;
+		font-weight: 400;
+		gap: 5px;
+	}
+
+	.commercial-flights .content .tab-content .videos {
+		margin-top: 20px;
+	}
+
+	.commercial-flights .content .tab-content .videos .h-350 {
+		height: 316px;
+		width: 80%;
+		margin: auto;
+		padding: 0;
+	}
+
+	.commercial-flights .content .tab-content .videos .h-380 {
+		height: 160px;
+		max-width: 90%;
+		width: 90%;
+		overflow-x: scroll;
+		margin: auto;
+	}
+
+	.commercial-flights .content .tab-content .videos .boxes {
+		flex-wrap: nowrap;
+		height: 100%;
+		justify-content: flex-start;
+	}
+
+	.commercial-flights .content .tab-content .videos .boxes .video-box {
+		min-height: 126px;
+		max-height: 126px;
+		min-width: 106px;
+		scroll-snap-align: center;
+		width: 100%;
+	}
+
+	.commercial-flights .content .tab-content .resigter {
+		font-size: 18px;
+		font-weight: 400;
+		height: 48px;
+		max-width: 100%;
+		width: 100%;
+		padding: 14px 26px;
+	}
+
+	.commercial-flights .content .tab-content button {
+		font: normal normal bold 16px/18px Tajawal;
+		margin-top: 1.5rem;
+	}
+
+	.commercial-flights .content .tab-content .register-remaining h6 {
+		font-size: 1rem;
+		line-height: 10px;
+	}
+
+	.commercial-flights .content .tab-content .register-form p {
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	.commercial-flights .content .tab-content .register-form .condition button {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		font-weight: 500;
+	}
+
+	.commercial-flights .content .tab-content .register-form .condition svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.commercial_flights_questions {
+		padding: 0;
+		margin-top: 0rem;
+		margin-bottom: 40px;
+	}
+
+	.commercial-flights .content .tab-content .register-remaining svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.commercial-flights .content .tab-content .packages .package {
+		box-shadow: 0 0 3px 3px #97596329;
+	}
+
+	.commercial-flights .content .tab-content .packages .package .title h6 {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		font-weight: 500;
+	}
+
+	.commercial-flights .content .tab-content .packages .package .body ul li {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.commercial-flights .content .tab-content .packages .package button {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		font-weight: 500;
+	}
+
+	.commercial-flights .content .tab-content .packages .package button span {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		font-weight: 700;
+	}
+
+	.commercial-flights .content .tab-content .register-form .input-group label {
+		font-weight: 400;
+	}
+
+	.commercial-flights-bg-modal .commercial-flights-modal .body {
+		padding: 1rem;
+	}
+
+	.commercial-flights-bg-modal .commercial-flights-modal .body button {
+		font-size: 14px;
+		line-height: 1.75rem;
+		font-weight: 500;
+	}
+
+	.commercial-flights-bg-modal .commercial-flights-modal .header h1 {
+		font-size: 1rem;
+	}
+
+	.commercial_flights_questions
+		.accordion-item
+		.accordion-header
+		.accordion-button {
+		font-size: 18px;
+		line-height: 1.5;
+		letter-spacing: 0.00938em;
+		font-weight: 400;
+		text-align: start;
+		white-space: pre-wrap;
+	}
+
+	.commercial-flights
+		.content
+		.tab-content
+		.commercial_flights_questions
+		.accordion-item
+		.accordion-body
+		.accordion-item
+		.accordion-body {
+		font-size: 18px;
+		line-height: 1.5;
+		letter-spacing: 0.00938em;
+		font-weight: 400;
+	}
+
+	.commercial-flights .content .title .register {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.commercial-flights .content .tab-content .register-form {
+		margin-top: 1rem;
+	}
+
+	.video-container button {
+		margin: 0 !important;
+	}
+
+	.business_flights_features .box .cont ul {
+		padding: 10px 5px;
+	}
+	.faqs {
+		padding: 1rem;
+	}
+	.faqs .MuiPaper-root .MuiAccordionSummary-content h6 {
+		font-size: 1rem;
+	}
+}
+
+.mySwiper_products_swiper {
+	height: 430px !important;
+	padding: 0 18px 18px !important;
+	margin-bottom: 20px;
+}
+
+.new-product-card {
+	position: relative;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 15px 64px 0px !important;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background-color: #fff;
+	display: block;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+}
+
+.outstanding-products.home .new-product-card {
+	margin-bottom: 30px;
+	box-shadow: none;
+}
+
+.new-product-card:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 64px 0px;
+}
+
+.new-product-card *,
+.popup * {
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	outline: none;
+}
+
+.new-product-card .img-box .swiper,
+.new-product-card .img-box .soq-product-swiper .soq-img-slide {
+	width: 100%;
+	height: 100%;
+}
+
+.new-product-card .img-box {
+	height: 300px;
+	max-height: 240px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+}
+.new-product-card .img-box img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	mix-blend-mode: multiply;
+}
+.new-product-card .text-box {
+	padding: 12px 30px 30px 30px;
+}
+
+.new-product-card .text-box .title {
+	font-weight: 600;
+	color: #02466a;
+	font-size: 15px;
+	line-height: 24px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.new-product-card .text-box .title:hover {
+	color: #1bbabd;
+}
+
+.new-product-card .text-box .description {
+	font-weight: 500;
+	color: #909090;
+	font-size: 15px;
+	line-height: 1.6;
+	margin: 15px 0 0 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+}
+
+.new-product-card .text-box .price {
+	display: flex;
+	gap: 12px;
+	font-weight: 600;
+	font-size: 18px;
+	color: #1bbabd;
+	margin-top: 20px;
+}
+
+.new-product-card .text-box .price li.old {
+	color: #ef262c;
+	text-decoration-line: line-through;
+}
+
+.new-product-card .text-box .display-more-btn {
+	width: calc(100% - 60px);
+	border-radius: 4px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -100px;
+	background: #1bbabd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.new-product-card .text-box .display-more-btn:hover {
+	background: #b6be34;
+}
+
+.new-product-card:hover .text-box .display-more-btn {
+	bottom: 18px;
+}
+
+.popup-container {
+	text-align: center;
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0 0 0 / 0.75);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+.popup-content {
+	background-color: white;
+	padding: 60px 100px;
+	border-radius: 8px;
+	position: relative;
+	max-width: 600px;
+	margin: 0 15px;
+	text-align: center;
+}
+
+.close-btn {
+	background: transparent;
+	border: none;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+.close-btn svg {
+	fill: #02466a;
+}
+
+.close-btn:hover svg {
+	fill: #1bbabd;
+	transform: rotate(360deg);
+}
+.popup-content .note {
+	font-weight: 500;
+	color: #200407;
+	font-size: 20px;
+	line-height: 1.6;
+	margin: 0 0 50px 0;
+}
+.popup-content a.display-more-btn.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.popup-content .have-account {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+	color: #909090;
+	font-size: 16px;
+	line-height: 1.6;
+	font-weight: 500;
+}
+.popup-content .have-account a {
+	color: #b6be34;
+}
+.popup-content .have-account a:hover {
+	color: #1bbabd;
+}
+.soq-product-page .MuiPagination-ul {
+	direction: ltr;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.soq-product-page .MuiPagination-ul li button:hover,
+.soq-product-page .MuiPagination-ul li button.Mui-selected {
+	background: #1bbabd;
+	color: #fff;
+	font-weight: 600;
+}
+
+.row-per-page-box {
+	position: relative;
+	padding: 4px 16px;
+	border: 1px solid #1bbabd;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	color: #1bbabd;
+	font-weight: 500;
+	gap: 12px;
+}
+.row-per-page-box i {
+	width: 45px;
+	height: 45px;
+	display: inline-flex;
+	background: #63e5e2;
+	border-radius: 3px;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.row-per-page-box svg {
+	width: 24px;
+	height: 24px;
+	fill: #fff;
+}
+.row-per-page-box .MuiOutlinedInput-root {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+}
+.btn-container-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	direction: ltr;
+	gap: 30px;
+}
+
+@media (max-width: 768px) {
+	.mySwiper_products_swiper {
+		padding: 0px !important;
+		margin-bottom: 16px;
+	}
+}
+@media (max-width: 575px) {
+	.popup-content {
+		padding: 60px 30px;
+	}
+	.btn-container-row {
+		flex-direction: column;
+	}
+}

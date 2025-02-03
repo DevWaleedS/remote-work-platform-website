@@ -1,0 +1,87 @@
+.commercial-flights-bg-modal .commercial-flights-modal.bank-modal {
+	width: 612px;
+	max-width: 100%;
+	transform: translate(-50%, -90%);
+	-webkit-transform: translate(-50%, -90%);
+	-moz-transform: translate(-50%, -90%);
+	-ms-transform: translate(-50%, -90%);
+	-o-transform: translate(-50%, -90%);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.bank-modal .header {
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-ms-border-radius: 10px 10px 0 0;
+	-o-border-radius: 10px 10px 0 0;
+}
+.bank-modal-title {
+	font-size: 22px;
+	font-weight: 400;
+	padding-top: 10px;
+}
+
+.bank-modal .phone-icon {
+	width: 26px;
+	height: 26px;
+	color: #1dbbbe;
+	margin-left: 2px;
+}
+
+.bank-modal .contact-name {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.bank-modal .phone-number {
+	font-size: 20px;
+	color: #1dbbbe;
+	padding-right: 2px;
+	margin-bottom: -4px;
+}
+
+@media (max-width: 768px) {
+	.commercial-flights-bg-modal .commercial-flights-modal.bank-modal {
+		max-width: 95%;
+		transform: translate(-50%, -90%);
+		-webkit-transform: translate(-50%, -90%);
+		-moz-transform: translate(-50%, -90%);
+		-ms-transform: translate(-50%, -90%);
+		-o-transform: translate(-50%, -90%);
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		-ms-border-radius: 6px;
+		-o-border-radius: 6px;
+	}
+	.bank-modal .header {
+		border-radius: 6px 6px 0 0;
+		-webkit-border-radius: 6px 6px 0 0;
+		-moz-border-radius: 6px 6px 0 0;
+		-ms-border-radius: 6px 6px 0 0;
+		-o-border-radius: 6px 6px 0 0;
+	}
+	.bank-modal-title {
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	.bank-modal .phone-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.bank-modal .contact-name {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	.bank-modal .phone-number {
+		font-size: 18px;
+		color: #1dbbbe;
+	}
+}
