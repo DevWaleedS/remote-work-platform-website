@@ -4,6 +4,7 @@ export { default as VideoIMg } from "./img03.png";
 export { default as HowToStart } from "./how-to-start.png";
 export { default as ContactUsImg } from "./contact-us.png";
 export { default as DemoImage } from "./placeholderImage.png";
+export { default as Banner01 } from "./banner-01.jpg";
 
 /* home services */
 export { default as HomeServiceOne } from "./home-services/Service01.png";

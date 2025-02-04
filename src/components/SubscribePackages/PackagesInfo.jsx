@@ -12,6 +12,8 @@ const PackagesInfo = ({ isLoading, packages, highestPricedPackage }) => {
 		window.location.href = "/";
 	};
 
+	console.log(packages);
+
 	return (
 		<>
 			<div className='content-package '>

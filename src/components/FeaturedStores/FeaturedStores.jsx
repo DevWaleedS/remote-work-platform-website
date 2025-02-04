@@ -83,7 +83,7 @@ const FeaturedStores = ({ isFetching, homePageData, setUseDisplayStores }) => {
 
 	return (
 		<>
-			<div className='stores-info '>
+			<div className='stores-info mt-5 '>
 				<div className='container'>
 					<div className='header flex-column flex-md-row gap-4 '>
 						<MainTitle text={"الشركات المميزة"} />

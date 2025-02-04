@@ -28,6 +28,7 @@ const WhyUs = () => {
 						src={HowToStart}
 						alt='ليش تختار منصة المعرفة للعمل عن بُعد'
 						loading='lazy'
+						style={{ mixBlendMode: "multiply" }}
 					/>
 				</div>
 

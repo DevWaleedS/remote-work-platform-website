@@ -25,13 +25,13 @@
 	font-size: 18px;
 }
 
-.main-footer .all {
+.main-footer {
 	background: linear-gradient(to right, #1cbbbe, #065978);
 	padding: 60px 0 0;
 	min-height: 300px;
 }
 
-.main-footer .all .container {
+.main-footer .container {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -279,7 +279,7 @@
 	}
 }
 @media (max-width: 768px) {
-	.main-footer .all .container {
+	.main-footer .container {
 		gap: 40px;
 	}
 

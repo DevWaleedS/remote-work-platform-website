@@ -25,12 +25,13 @@ import "./HomeBox.css";
 // components
 import WhyUs from "../../whyUs/WhyUs";
 
-const HomeBox = ({
-	homePageData,
-
-	isFetching,
-	setUseDisplayStores,
-}) => {
+const HomeBox = (
+	{
+		// homePageData,
+		// isFetching,
+		// setUseDisplayStores,
+	}
+) => {
 	const navigate = useNavigate();
 
 	// ------------------------------------------------------------------
@@ -38,7 +39,8 @@ const HomeBox = ({
 	return (
 		<>
 			{/* ============= Hero Banners ===================== */}
-			<HeroBanners homePageData={homePageData} navigate={navigate} />
+			<HeroBanners navigate={navigate} />
+			{/*			<HeroBanners homePageData={homePageData} navigate={navigate} />*/}
 
 			{/* ============= What We Offer ===================== */}
 			<WhatWeOffer />
@@ -63,7 +65,9 @@ const HomeBox = ({
 			) : null}
 */}
 
-			<PartnerSwiper PartnerDataSwiper={homePageData?.partners} />
+			{/*			<PartnerSwiper PartnerDataSwiper={homePageData?.partners} />*/}
+
+			<PartnerSwiper />
 
 			{/*{homePageData?.content_section4?.length > 0 ? (
 				<FeaturedStores
@@ -73,11 +77,7 @@ const HomeBox = ({
 				/>
 			) : null}*/}
 
-			<FeaturedStores
-				isFetching={isFetching}
-				homePageData={homePageData}
-				setUseDisplayStores={setUseDisplayStores}
-			/>
+			<FeaturedStores />
 
 			{/* ============= Our Reviews ===================== */}
 			{/*{homePageData?.comment?.length > 0 ? (
@@ -86,7 +86,7 @@ const HomeBox = ({
 				</>
 			) : null}*/}
 
-			<ReviewSwiper DataReviewSwiper={homePageData?.comment} />
+			<ReviewSwiper />
 		</>
 	);
 };

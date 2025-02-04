@@ -9,7 +9,7 @@ import partner09 from "./09.png";
 import partner10 from "./10.png";
 import partner11 from "./11.png";
 import partner12 from "./12.png";
-import partner13 from "./13.png";
+
 import partner14 from "./14.png";
 import partner15 from "./15.png";
 import partner16 from "./16.png";
@@ -27,7 +27,6 @@ export {
 	partner10,
 	partner11,
 	partner12,
-	partner13,
 	partner14,
 	partner15,
 	partner16,

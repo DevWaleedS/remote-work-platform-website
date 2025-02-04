@@ -1,10 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, FreeMode, EffectFade } from "swiper/modules";
 import "./PartnerSwiper.css";
 import "swiper/css";
+import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import PartnerBox from "./PartnerBox.jsx";
+
 import {
 	partner01,
 	partner02,
@@ -17,13 +19,11 @@ import {
 	partner10,
 	partner11,
 	partner12,
-	partner13,
 	partner14,
 	partner15,
 	partner16,
 	partner17,
 } from "../../../assets/Img/OurPartnersImages/index.js";
-import MainTitle from "../../MainTitle/MainTitle.jsx";
 
 const partnerImages = [
 	{
@@ -73,10 +73,6 @@ const partnerImages = [
 	},
 
 	{
-		id: 13,
-		image: partner13,
-	},
-	{
 		id: 14,
 		image: partner14,
 	},
@@ -96,45 +92,41 @@ const partnerImages = [
 
 const PartnerSwiper = () => {
 	return (
-		<div className='our-partners p-main'>
+		<div className='our-partners pb-5'>
 			<div className='container'>
-				<MainTitle text={"شركاء النجاح"} />
-				<div
-					className='all mt-2'
-					data-aos='fade-down'
-					data-aos-once='true'
-					data-aos-delay='600'>
+				<div data-aos='fade-down' data-aos-once='true' data-aos-delay='600'>
 					<Swiper
-						slidesPerView={10}
+						slidesPerView='auto'
 						spaceBetween={10}
 						loop={true}
 						speed={6000}
 						autoplay={{
 							delay: 0,
 							disableOnInteraction: false,
-							reverseDirection: true,
 							pauseOnMouseEnter: true,
+							reverseDirection: true,
 						}}
 						breakpoints={{
-							200: {
+							320: {
 								slidesPerView: 2,
+								spaceBetween: 20,
 							},
-							992: {
+							768: {
 								slidesPerView: 4,
+								spaceBetween: 25,
 							},
-							1200: {
+							1024: {
 								slidesPerView: 6,
+								spaceBetween: 30,
 							},
 						}}
-						modules={[Autoplay]}
+						modules={[Autoplay, FreeMode, EffectFade]}
 						className='swiper-partner'>
-						{partnerImages?.map((item) => {
-							return (
-								<SwiperSlide key={item.id}>
-									<PartnerBox Img={item.image} />
-								</SwiperSlide>
-							);
-						})}
+						{partnerImages?.map((item) => (
+							<SwiperSlide key={item.id} className='partner-slide'>
+								<PartnerBox Img={item.image} className='partner-image' />
+							</SwiperSlide>
+						))}
 					</Swiper>
 				</div>
 			</div>

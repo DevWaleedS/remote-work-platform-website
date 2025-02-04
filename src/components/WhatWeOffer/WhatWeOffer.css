@@ -1,5 +1,6 @@
 .what-we-offer-section {
 	padding: 60px 0;
+	background-color: #fff;
 }
 
 .what-we-offer-box-content h2 {
@@ -42,19 +43,37 @@
 }
 
 .what-we-offer-boxs {
-	box-shadow: 0px 3px 6px #02466a0f;
-	border: 1px solid #02466a0f;
-	background-color: #fff;
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0.05)
+	);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 32px 0 rgba(2, 70, 106, 0.15);
 	padding: 18px 14px;
 	cursor: pointer;
-	height: 300px;
+	height: 280px;
 	width: 300px;
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
+	transition: all 0.3s ease;
 }
+
+.what-we-offer-boxs:hover {
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.2),
+		rgba(255, 255, 255, 0.1)
+	);
+	transform: translateY(-5px);
+	box-shadow: 0 12px 40px 0 rgba(2, 70, 106, 0.2);
+}
+
 .what-we-offer-boxs .what-we-offer-img {
 	width: auto;
 	height: 5rem;

@@ -26,13 +26,13 @@ const Home = ({
 				/>
 			</Helmet>
 			<HomeBox
-				isFetching={isFetching}
-				homePageData={homePageData}
-				homeLoadingData={homeLoadingData}
-				pageTarget={pageTarget}
-				setPageTarget={setPageTarget}
-				displayStores={displayStores}
-				setUseDisplayStores={setUseDisplayStores}
+			// isFetching={isFetching}
+			// homePageData={homePageData}
+			// homeLoadingData={homeLoadingData}
+			// pageTarget={pageTarget}
+			// setPageTarget={setPageTarget}
+			// displayStores={displayStores}
+			// setUseDisplayStores={setUseDisplayStores}
 			/>
 		</>
 	);

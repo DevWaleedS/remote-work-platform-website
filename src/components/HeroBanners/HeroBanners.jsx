@@ -6,6 +6,7 @@ import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import { Banner01 } from "../../assets/Img";
 
 const HeroBanners = ({ homePageData, navigate }) => {
 	// navigate to auth/login by default
@@ -14,7 +15,8 @@ const HeroBanners = ({ homePageData, navigate }) => {
 	};
 
 	const slides = [
-		homePageData?.slider1,
+		// homePageData?.slider1,
+		{ id: 1, image: Banner01 },
 		// homePageData?.slider1,
 		// homePageData?.slider1,
 	].filter(Boolean);
@@ -41,7 +43,7 @@ const HeroBanners = ({ homePageData, navigate }) => {
 						<div
 							className='swiper_image'
 							style={{
-								backgroundImage: `url(${slide})`,
+								backgroundImage: `url(${slide.image})`,
 								cursor: index > 0 ? "pointer" : "default",
 							}}>
 							<div className='content'>

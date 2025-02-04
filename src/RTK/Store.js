@@ -18,7 +18,7 @@ import { subscribePackagesApi } from "./Api/subscribePackagesApi.js";
 import { servicesApi } from "./Api/servicesApi.js";
 import { selectPaymentsMethodsApi } from "./Api/selectoresApis/selectPaymentsMethodsApi.js";
 import { selectServicesApi } from "./Api/selectoresApis/selectServicesApi.js";
-import { ourWorksApi } from "./Api/ourWorksApi.js";
+
 import { productsApi } from "./Api/productsApi.js";
 
 export let Store = configureStore({
@@ -26,7 +26,7 @@ export let Store = configureStore({
 		getDefaultMiddleware().concat(
 			homeApi.middleware,
 			blogsApi.middleware,
-			ourWorksApi.middleware,
+
 			servicesApi.middleware,
 			websitePageApi.middleware,
 			registerFormApi.middleware,
@@ -45,7 +45,7 @@ export let Store = configureStore({
 	reducer: {
 		[homeApi.reducerPath]: homeApi.reducer,
 		[blogsApi.reducerPath]: blogsApi.reducer,
-		[ourWorksApi.reducerPath]: ourWorksApi.reducer,
+
 		[servicesApi.reducerPath]: servicesApi.reducer,
 		[websitePageApi.reducerPath]: websitePageApi.reducer,
 		[registerFormApi.reducerPath]: registerFormApi.reducer,

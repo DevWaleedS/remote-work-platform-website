@@ -1,4 +1,25 @@
 .swiper-partner {
-  /* max-width: 1300px; */
-  padding: 0 !important;
+	padding: 0 !important;
+}
+
+.swiper-partner {
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+.partner-slide {
+	transition: transform 0.3s ease;
+}
+
+.partner-slide:hover {
+	transform: scale(1.05);
+}
+
+.partner-image {
+	filter: grayscale(100%);
+	transition: filter 0.3s ease;
+}
+
+.partner-image:hover {
+	filter: grayscale(0%);
 }

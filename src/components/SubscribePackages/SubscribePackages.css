@@ -1,5 +1,10 @@
 /* ===============start-our-package=================== */
-
+.our-package,
+.our-partners,
+.our-review {
+	padding: 100px 0 100px;
+	background-color: #fff;
+}
 .our-package .container .all ul {
 	padding: 0 !important;
 	margin: 0 !important;
@@ -9,10 +14,6 @@
 	gap: 20px;
 }
 
-.our-package,
-.stores-info {
-	margin: 100px 0 120px 0;
-}
 .our-package .container .all ul li:nth-child(1) {
 	font-size: var(--font-size-20);
 	letter-spacing: 0.2px;

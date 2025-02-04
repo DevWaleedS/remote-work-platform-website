@@ -56,9 +56,7 @@ function Services() {
 				<div className='container'>
 					<PageTitle title={"خدماتنا"} />
 
-					{isLoading ? (
-						<LoadingPage />
-					) : (
+					{
 						<>
 							<div className='boxes' data-aos-once='true' data-aos='fade-up'>
 								{/*{servicesData?.Services?.map((service) => (
@@ -151,6 +149,7 @@ function Services() {
 									</div>
 								))}
 							</div>
+
 							{servicesData?.Services.length > 0 || !isLoading ? (
 								<div
 									className='btn-container-row mb-4'
@@ -194,7 +193,7 @@ function Services() {
 								</div>
 							) : null}
 						</>
-					)}
+					}
 				</div>
 			</div>
 

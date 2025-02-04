@@ -13,6 +13,15 @@ import {
 	useSearchInBlogsMutation,
 } from "../RTK/Api/blogsApi";
 
+const allBlogs = [
+	{
+		id: 1,
+		title: "المقال الاول",
+		page_desc: "المقال الاول",
+		image: "https://via.placeholder.com/300x200",
+	},
+];
+
 const Blog = () => {
 	// posts context
 	const postsContext = useContext(AppContext);
@@ -25,10 +34,10 @@ const Blog = () => {
 	} = postsContext;
 
 	// get all blogs posts
-	const { data: allBlogs, isLoading } = useGetAllBlogsQuery({
-		postsNumber,
-		postCategoryId: postCategoryId,
-	});
+	// const { data: allBlogs, isLoading } = useGetAllBlogsQuery({
+	// 	postsNumber,
+	// 	postCategoryId: postCategoryId,
+	// });
 
 	// handle search in blogs
 	const [searchInBlogs, { isLoading: blogsIsLoading }] =
@@ -44,7 +53,7 @@ const Blog = () => {
 				/>
 			</Helmet>
 
-			{isLoading ? (
+			{/*	{isLoading ? (
 				<LoadingPage />
 			) : (
 				<>
@@ -61,7 +70,20 @@ const Blog = () => {
 						setPostCategoryArray={setPostCategoryArray}
 					/>
 				</>
-			)}
+			)}*/}
+
+			<BlogBox
+				pageTitle='المقالات'
+				allBlogs={allBlogs}
+				isLoading={blogsIsLoading}
+				searchInPosts={searchInBlogs}
+				postsNumber={postsNumber}
+				setPostsNumber={setPostsNumber}
+				postCategoryId={postCategoryId}
+				setPostCategoryId={setPostCategoryId}
+				pagesCategory={allBlogs?.postCategory}
+				setPostCategoryArray={setPostCategoryArray}
+			/>
 		</>
 	);
 };

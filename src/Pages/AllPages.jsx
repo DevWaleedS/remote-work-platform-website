@@ -41,21 +41,20 @@ const FailedCheckout = React.lazy(() =>
 
 const ContactUs = React.lazy(() => import("./ContactUs/ContactUs"));
 const Faqs = React.lazy(() => import("./Faqs/Faqs"));
-const OurWorks = React.lazy(() => import("./OurWorks/OurWorks"));
 
 const AllPages = () => {
 	// to handle pagination of stores
 	const [pageTarget, setPageTarget] = useState(1);
 	const [displayStores, setUseDisplayStores] = useState(12);
 
-	const {
-		data: homePageData,
-		isLoading,
-		isFetching,
-	} = useGetHomePageDataQuery({
-		page: pageTarget,
-		number: displayStores,
-	});
+	// const {
+	// 	data: homePageData,
+	// 	isLoading,
+	// 	isFetching,
+	// } = useGetHomePageDataQuery({
+	// 	page: pageTarget,
+	// 	number: displayStores,
+	// });
 
 	return (
 		<>
@@ -65,7 +64,8 @@ const AllPages = () => {
 						v7_startTransition: true,
 						v7_relativeSplatPath: true,
 					}}>
-					<Header homeFooter={homePageData?.footer} />
+					{/*					<Header homeFooter={homePageData?.footer} />*/}
+					<Header />
 
 					<ToastContainer
 						rtl
@@ -86,10 +86,17 @@ const AllPages = () => {
 							path=''
 							element={
 								<Suspense fallback={<LoadingPage />}>
-									<Home
+									{/*<Home
 										isFetching={isFetching}
 										homePageData={homePageData}
 										homeLoadingData={isLoading}
+										pageTarget={pageTarget}
+										setPageTarget={setPageTarget}
+										displayStores={displayStores}
+										setUseDisplayStores={setUseDisplayStores}
+									/>*/}
+
+									<Home
 										pageTarget={pageTarget}
 										setPageTarget={setPageTarget}
 										displayStores={displayStores}
@@ -205,27 +212,18 @@ const AllPages = () => {
 							}
 						/>
 
-						{/* our works pages */}
-
-						<Route
-							path='/our-works'
-							element={
-								<Suspense fallback={<LoadingPage />}>
-									<OurWorks pagesCategory={homePageData?.ourwork_category} />
-								</Suspense>
-							}
-						/>
-
 						<Route path='*' element={<NotFoundPage />} />
 					</Routes>
 
-					<FooterOverlay
-						ourwork_category={homePageData?.ourwork_category}
+					{/*<FooterOverlay
+
 						registrationMarketer={homePageData?.registration_marketer}
 						linkWebsite={homePageData?.website_socialmedia}
 						logoFooter={homePageData?.logo_footer}
 						homeFooter={homePageData?.footer}
-					/>
+					/>*/}
+
+					<FooterOverlay />
 				</BrowserRouter>
 
 				<FloatingWhatsappIcon logo={Logo} />

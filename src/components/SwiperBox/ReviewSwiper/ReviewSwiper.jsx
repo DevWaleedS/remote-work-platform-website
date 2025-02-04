@@ -48,10 +48,10 @@ let ReviewSwiper = ({ DataReviewSwiper }) => {
 							effect={"fade"}
 							slidesPerView={1}
 							loop={true}
-							autoplay={{
-								delay: 2000,
-								disableOnInteraction: false,
-							}}
+							// autoplay={{
+							// 	delay: 2000,
+							// 	disableOnInteraction: false,
+							// }}
 							navigation={false}
 							centeredSlides={false}
 							freeMode={true}

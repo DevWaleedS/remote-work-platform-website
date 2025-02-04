@@ -13,6 +13,7 @@
 	color: transparent;
 	font-size: 32px;
 	font-weight: 600;
+	padding-top: 5px;
 	text-decoration: underline wavy #1dbbbe1a;
 	text-underline-offset: 12px;
 }

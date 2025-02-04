@@ -10,14 +10,23 @@ import {
 } from "react-icons/fa6";
 import { FaSnapchatGhost } from "react-icons/fa";
 
-const socialIcons = {
-	facebook: FaFacebookF,
-	"x.com": FaXTwitter,
-	instagram: FaInstagram,
-	snapchat: FaSnapchatGhost,
-	youtube: FaYoutube,
-	tiktok: FaTiktok,
-};
+// const socialIcons = {
+// 	facebook: FaFacebookF,
+// 	"x.com": FaXTwitter,
+// 	instagram: FaInstagram,
+// 	snapchat: FaSnapchatGhost,
+// 	youtube: FaYoutube,
+// 	tiktok: FaTiktok,
+// };
+
+const socialIcons = [
+	<FaFacebookF />,
+	<FaXTwitter />,
+	<FaInstagram />,
+	<FaSnapchatGhost />,
+	<FaYoutube />,
+	<FaTiktok />,
+];
 const FooterLogo = ({ logoFooter, linkWebsite }) => {
 	return (
 		<div className='box-left'>
@@ -33,7 +42,7 @@ const FooterLogo = ({ logoFooter, linkWebsite }) => {
 			</a>
 
 			<ul>
-				{linkWebsite?.length > 0 &&
+				{/*{linkWebsite?.length > 0 &&
 					linkWebsite.map((el) => {
 						const platform = Object.keys(socialIcons).find((key) =>
 							el.link.includes(key)
@@ -50,7 +59,17 @@ const FooterLogo = ({ logoFooter, linkWebsite }) => {
 								</a>
 							</li>
 						);
-					})}
+					})}*/}
+
+				{socialIcons.map((el, index) => {
+					return (
+						<li key={index}>
+							<a className='linkWebsite-icon-style' href={el.link}>
+								{el}
+							</a>
+						</li>
+					);
+				})}
 			</ul>
 		</div>
 	);

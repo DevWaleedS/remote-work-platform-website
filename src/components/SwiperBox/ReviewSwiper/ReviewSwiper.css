@@ -86,7 +86,21 @@
 
 @media (max-width: 768px) {
 	.our-review_img-content .swiper-review {
+		width: 530px;
+	}
+}
+@media (max-width: 530px) {
+	.our-review_img-content .swiper-review {
+		width: 430px;
+	}
+}
+@media (max-width: 430px) {
+	.our-review_img-content .swiper-review {
 		width: 400px;
-		min-width: 450px;
+	}
+}
+@media (max-width: 320px) {
+	.our-review_img-content .swiper-review {
+		width: 310px;
 	}
 }
