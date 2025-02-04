@@ -51,12 +51,48 @@
 	height: 100%;
 	object-fit: cover;
 	mix-blend-mode: multiply;
+	z-index: 2;
+}
+
+.vision2030-icon {
+	bottom: 0;
+	left: -11px;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(10px);
+	padding: 25px 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #1cbbbe;
+	border-radius: 60px 2px 60px 2px;
+	-webkit-border-radius: 60px 2px 60px 2px;
+	-moz-border-radius: 60px 2px 60px 2px;
+	-ms-border-radius: 60px 2px 60px 2px;
+	-o-border-radius: 60px 2px 60px 2px;
 }
 
 @media screen and (max-width: 768px) {
+	.why-us-box {
+		margin: 0;
+	}
+
 	.why-text-content .why-title {
 		text-align: center;
 		font-size: 32px;
 		font-weight: 500;
+	}
+
+	.vision2030-icon {
+		bottom: 10px;
+		left: 0px;
+		z-index: 1;
+		padding: 10px 22px;
+		border-width: 1px;
+	}
+
+	.vision2030-icon svg {
+		width: 100px;
+		height: 100px;
 	}
 }
