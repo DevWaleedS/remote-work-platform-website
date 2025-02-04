@@ -31,7 +31,7 @@ const WebsitePages = React.lazy(() => import("./WebsitePages"));
 const AboutUs = React.lazy(() => import("./AboutUs/AboutUs"));
 const Services = React.lazy(() => import("./Services/Services"));
 const PackagesPage = React.lazy(() => import("./PackagesPage/PackagesPage"));
-const ProductsPage = React.lazy(() => import("./ProductsPage"));
+
 const SuccessCheckOut = React.lazy(() =>
 	import("../components/PaymentStatus/SuccessCheckout")
 );
@@ -160,23 +160,6 @@ const AllPages = () => {
 							element={
 								<Suspense fallback={<LoadingPage />}>
 									<BlogDetail />
-								</Suspense>
-							}
-						/>
-
-						<Route
-							path='/all-products/:id/:title'
-							element={
-								<Suspense fallback={<LoadingPage />}>
-									<ProductsPage />
-								</Suspense>
-							}
-						/>
-						<Route
-							path='/all-products'
-							element={
-								<Suspense fallback={<LoadingPage />}>
-									<ProductsPage />
 								</Suspense>
 							}
 						/>

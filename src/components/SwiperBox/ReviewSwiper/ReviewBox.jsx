@@ -5,17 +5,13 @@ import { FaQuoteRight, FaStar } from "react-icons/fa6";
 const ReviewBox = ({ text, Img, ownerName, companyName }) => {
 	return (
 		<div className='review-box'>
-			<div className=''>
-				<FaQuoteRight className='quote-icon' />
-			</div>
-
+			<FaQuoteRight className='quote-icon' />
 			<p
 				className='review-text'
 				dangerouslySetInnerHTML={{
 					__html: DOMPurify.sanitize(text),
 				}}
 			/>
-
 			<div className='owner-info-box d-flex justify-content-between align-items-center'>
 				<div className='d-flex justify-content-start align-items-center'>
 					<img className='rounded-circle' src={Img} alt='' loading='lazy' />

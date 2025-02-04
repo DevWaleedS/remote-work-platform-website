@@ -25,13 +25,12 @@ import "./HomeBox.css";
 // components
 import WhyUs from "../../whyUs/WhyUs";
 
-const HomeBox = (
-	{
-		// homePageData,
-		// isFetching,
-		// setUseDisplayStores,
-	}
-) => {
+/*{
+		homePageData,
+		isFetching,
+		setUseDisplayStores,
+	}*/
+const HomeBox = () => {
 	const navigate = useNavigate();
 
 	// ------------------------------------------------------------------
@@ -48,15 +47,6 @@ const HomeBox = (
 			{/* ============= Why Atlbha ===================== */}
 			<WhyAtlbha />
 
-			{/* ============= Our Packages ===================== */}
-			<div className='our-package '>
-				<div className='container'>
-					<SubscribePackages />
-				</div>
-			</div>
-
-			<WhyUs />
-
 			{/* ============= Our Partners ===================== */}
 			{/*{homePageData?.partners?.length > 0 ? (
 				<>
@@ -65,9 +55,16 @@ const HomeBox = (
 			) : null}
 */}
 
-			{/*			<PartnerSwiper PartnerDataSwiper={homePageData?.partners} />*/}
-
 			<PartnerSwiper />
+
+			<WhyUs />
+
+			{/* ============= Our Packages ===================== */}
+			<div className='our-package '>
+				<div className='container'>
+					<SubscribePackages />
+				</div>
+			</div>
 
 			{/*{homePageData?.content_section4?.length > 0 ? (
 				<FeaturedStores

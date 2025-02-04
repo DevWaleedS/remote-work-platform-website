@@ -98,7 +98,7 @@ const Header = () => {
 
 	// navigate to auth/login by default
 	const navigateToMerchantRegister = () => {
-		window.location.href = "https://store.atlbha.com/auth/login";
+		window.location.href = "/";
 	};
 
 	return (

@@ -24,8 +24,10 @@ const storesData = [
 	{ id: 2, name: "منصة غيم الأعمال", image: company02 },
 	{ id: 3, name: " فاز لتقنية المعلومات", image: company03 },
 	{ id: 4, name: "الوليد للطاقة المتجددة", image: company04 },
-	{ id: 5, name: "التعاون الدولي للشبكات", image: company05 },
-	{ id: 6, name: "بيترو بارك ", image: company06 },
+	// { id: 5, name: "التعاون الدولي للشبكات", image: company05 },
+	// { id: 6, name: "بيترو بارك ", image: company06 },
+	// { id: 7, name: "شركة السعداء", image: company01 },
+	// { id: 8, name: " فاز لتقنية المعلومات", image: company03 },
 ];
 
 const FeaturedStores = ({ isFetching, homePageData, setUseDisplayStores }) => {
@@ -222,21 +224,20 @@ const FeaturedStores = ({ isFetching, homePageData, setUseDisplayStores }) => {
 									<div
 										data-aos='fade-left'
 										data-aos-once='true'
-										className=' container-box col-6 col-md-4 col-lg-3 col-xl-2 '
+										className=' container-box col-12  col-md-3 '
 										key={item.id}>
-										<div className='box'>
-											<div>
-												<img
-													style={{
-														mixBlendMode: "multiply",
-													}}
-													width='100%'
-													height='100%'
-													src={item.image}
-													alt={"item.name"}
-													loading='lazy'
-												/>
-											</div>
+										<div className='box d-flex  justify-content-center align-items-center gap-1'>
+											<img
+												style={{
+													mixBlendMode: "multiply",
+												}}
+												width='100%'
+												height='100%'
+												src={item.image}
+												alt={"item.name"}
+												loading='lazy'
+											/>
+
 											<p className=' text-center store-name'>{item.name}</p>
 										</div>
 									</div>

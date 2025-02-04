@@ -2,18 +2,34 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
-import { Autoplay, FreeMode } from "swiper/modules";
+import { Autoplay, EffectCreative } from "swiper/modules";
 import { MdCircle } from "react-icons/md";
 
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/css/effect-creative";
+
 import "./ReviewSwiper.css";
 
 //----
 import ReviewBox from "./ReviewBox.jsx";
 import { DemoImage } from "../../../assets/Img/index.js";
 import MainTitle from "../../MainTitle/MainTitle.jsx";
+
+const reviewsArray = [
+	{
+		id: 1,
+		reviewText:
+			"مع   منصة المعرفة للعمل عن بُعد، وجدت شريكًا حقيقيًا يدعمني في كل خطوة في رحلتي العملية. من اللحظة التي قدمت فيها طلبي، شعرت بالاهتمام الكامل والتواصل المستمر. كان فريقهم محترفًا للغاية، وقدموا لي نصائح واقعية ومفيدة قادتني لاتخاذ أفضل القرارات و. بدونهم، ما كنت لأحقق هذا النجاح في استثماري. أوصي بهم لأي شخص يبحث عن خبرة واحترافية حقيقية.",
+		name: "محمد عبد العزيز",
+		company: "مؤسس شركة الأمل",
+	},
+	{
+		id: 2,
+		name: "وليد صلاح ",
+		reviewText: "ارشح هذه المنصة  لكل من يبحث عن النجاح",
+		company: "مهندس برمجيات",
+	},
+];
 
 let ReviewSwiper = ({ DataReviewSwiper }) => {
 	return (
@@ -25,7 +41,7 @@ let ReviewSwiper = ({ DataReviewSwiper }) => {
 						data-aos='fade-up'
 						data-aos-once='true'>
 						<MainTitle text={"تقييمات عملاؤنا"} />
-						<h3 class='why-title mt-3'>
+						<h3 className='why-title mt-3'>
 							استمع إلى عملائنا كيف ساعدناهم في تحقيق أهدافهم بنجاح واحترافية
 						</h3>
 						<p className='why-text'>
@@ -45,17 +61,26 @@ let ReviewSwiper = ({ DataReviewSwiper }) => {
 						<MdCircle className='circle-icon top' />
 
 						<Swiper
-							effect={"fade"}
-							slidesPerView={1}
 							loop={true}
-							// autoplay={{
-							// 	delay: 2000,
-							// 	disableOnInteraction: false,
-							// }}
+							effect={"creative"}
+							creativeEffect={{
+								prev: {
+									shadow: true,
+									translate: [0, 0, -400],
+								},
+								next: {
+									translate: ["100%", 0, 0],
+								},
+							}}
+							grabCursor={true}
+							slidesPerView={1}
 							navigation={false}
 							centeredSlides={false}
-							freeMode={true}
-							modules={[Autoplay, FreeMode]}
+							autoplay={{
+								delay: 3000,
+								disableOnInteraction: false,
+							}}
+							modules={[Autoplay, EffectCreative]}
 							className='swiper-review '>
 							{/*{DataReviewSwiper.length
 							? DataReviewSwiper.map((el) => {
@@ -70,14 +95,14 @@ let ReviewSwiper = ({ DataReviewSwiper }) => {
 							  })
 							: null}*/}
 
-							{Array.from({ length: 5 })?.map((_, index) => {
+							{reviewsArray?.map((item, index) => {
 								return (
 									<SwiperSlide key={index}>
 										<ReviewBox
 											Img={DemoImage}
-											ownerName='محمد عبد العزيز'
-											companyName='مؤسس شركة الأمل'
-											text={"ارشح هذه المنصة لكل من يبحث عن النجاح"}
+											ownerName={item.name}
+											companyName={item.company}
+											text={item.reviewText}
 										/>
 									</SwiperSlide>
 								);

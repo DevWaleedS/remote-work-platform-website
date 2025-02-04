@@ -77,10 +77,14 @@
 		margin: 0;
 	}
 
-	.why-text-content .why-title {
+	.why-title {
 		text-align: center;
 		font-size: 32px;
 		font-weight: 500;
+	}
+	.why-text {
+		text-align: center;
+		padding: auto;
 	}
 
 	.vision2030-icon {
@@ -92,7 +96,7 @@
 	}
 
 	.vision2030-icon svg {
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
 	}
 }

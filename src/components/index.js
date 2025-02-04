@@ -5,8 +5,6 @@ import HeroBanners from "./HeroBanners/HeroBanners";
 import WhatWeOffer from "./WhatWeOffer/WhatWeOffer.jsx";
 import WhatWeOfferDetails from "./WhatWeOffer/WhatWeOfferDetails";
 
-import ProductSwiper from "./SwiperBox/ProductSwiper/ProductSwiper.jsx";
-import SouqAtlbhaSwiper from "./SwiperBox/SouqAtlbhaProductsSwiper/SouqAtlbhaSwiper.jsx";
 import ReviewSwiper from "./SwiperBox/ReviewSwiper/ReviewSwiper.jsx";
 import PartnerSwiper from "./SwiperBox/PartnerSwiper/PartnerSwiper.jsx";
 import MainTitle from "./MainTitle/MainTitle";
@@ -22,19 +20,13 @@ import DetailBlogBox from "./PagesBox/DetailBlogBox/DetailBlogBox";
 
 import OwnerBox from "./OwnerBox/OwnerBox";
 import WebsitePages from "./WebsitePages/WebsitePages";
-
 import NotFoundData from "./NotFoundData/NotFoundData";
-
 import LoadingPage from "./LoadingPage/LoadingPage";
-
-import ProductsBox from "./ProductsBox/ProductsBox.jsx";
 
 import SubscribePackages from "./SubscribePackages/SubscribePackages.jsx";
 import FeaturedStores from "./FeaturedStores/FeaturedStores.jsx";
 import SkeletonLoading from "./SkeletonLoading/SkeletonLoading.jsx";
 import WhyAtlbha from "./WhyAtlbha/WhyAtlbha.jsx";
-
-import HomePageSection from "./homePageSection/HomePageSection.jsx";
 
 import ShowAllProductsButton from "./ShowAllProductsButton.jsx";
 import FloatingWhatsappIcon from "./floatingWhatsappIcon/FloatingWhatsappIcon.jsx";
@@ -48,9 +40,6 @@ export {
 	WhyAtlbha,
 	WhatWeOffer,
 	WhatWeOfferDetails,
-	ProductSwiper,
-	SouqAtlbhaSwiper,
-	ProductsBox,
 	MainTitle,
 	HomeBox,
 	ReviewSwiper,
@@ -65,7 +54,6 @@ export {
 	NotFoundData,
 	WebsitePages,
 	LoadingPage,
-	HomePageSection,
 	ShowAllProductsButton,
 	FloatingWhatsappIcon,
 };
