@@ -61,7 +61,7 @@ function Services() {
 					) : (
 						<>
 							<div className='boxes' data-aos-once='true' data-aos='fade-up'>
-								{servicesData?.Services?.map((service) => (
+								{/*{servicesData?.Services?.map((service) => (
 									<div
 										key={service?.id}
 										role='button'
@@ -100,6 +100,50 @@ function Services() {
 													<div className='service-price d-flex justify-content-center align-items-center'>
 														{service?.price}{" "}
 														<span className='currency'>ر.س</span>
+													</div>
+												</div>
+											</div>
+										)}
+									</div>
+								))}*/}
+								{Array.from({ length: 12 })?.map((_, index) => (
+									<div
+										key={index}
+										role='button'
+										tabIndex={0}
+										onClick={() => handleServiceClick(index)}
+										onKeyDown={(e) =>
+											e.key === "Enter" && handleServiceClick(index)
+										}
+										className={`${
+											index === selectedId ? "selected" : ""
+										} box-${index} box`}
+										aria-expanded={index === selectedId}>
+										<div className='star-icon'>
+											<Star />
+										</div>
+										<p className='service-title'>اسم الخدمة</p>
+										<div className='arrow'>
+											<KeyboardArrowDownIcon />
+										</div>
+
+										{index === selectedId && (
+											<div className='detalis'>
+												<div
+													className='desc'
+													dangerouslySetInnerHTML={{
+														__html: DOMPurify.sanitize("محتوى الخدمة"),
+													}}
+												/>
+												<div className='services-btn-container d-flex justify-content-between align-items-center gap-2 mb-3 px-3'>
+													<button
+														onClick={handleOpenOrderServiceModal}
+														className='order-service-btn d-flex justify-content-center align-items-center'
+														aria-label='طلب الخدمة'>
+														طلب الخدمة
+													</button>
+													<div className='service-price d-flex justify-content-center align-items-center'>
+														1000 <span className='currency'>ر.س</span>
 													</div>
 												</div>
 											</div>

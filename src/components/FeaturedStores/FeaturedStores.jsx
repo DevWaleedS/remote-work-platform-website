@@ -11,11 +11,12 @@ import { useFilterStoresMutation } from "../../RTK/Api/homeApi";
 import SkeletonLoading from "../SkeletonLoading/SkeletonLoading";
 import NotFoundData from "../NotFoundData/NotFoundData";
 
+import { DemoImage } from "../../assets/Img";
+
 const FeaturedStores = ({ isFetching, homePageData, setUseDisplayStores }) => {
 	const [stores, setStores] = useState([]);
 	const [filterStoresData, setFilterStores] = useState({
 		categoryId: "",
-
 		storeName: "",
 	});
 
@@ -201,7 +202,35 @@ const FeaturedStores = ({ isFetching, homePageData, setUseDisplayStores }) => {
 								<SkeletonLoading />
 							) : stores?.content_section4?.length > 0 ? (
 								<>
-									{stores?.content_section4?.map((el) => {
+									{Array.from({ length: 6 })?.map((_, index) => {
+										return (
+											<div
+												data-aos='fade-left'
+												data-aos-once='true'
+												className=' container-box col-6 col-md-4 col-lg-3 col-xl-2 '
+												key={index}>
+												<div className='box'>
+													<div>
+														<img
+															style={{
+																mixBlendMode: "multiply",
+															}}
+															width='100%'
+															height='100%'
+															src={DemoImage}
+															alt={""}
+															loading='lazy'
+														/>
+													</div>
+													<p className=' text-center store-name'>
+														شركة المصرية للمقاولات العامة
+													</p>
+												</div>
+											</div>
+										);
+									})}
+
+									{/*{stores?.content_section4?.map((el) => {
 										return (
 											<div
 												data-aos='fade-left'
@@ -227,7 +256,7 @@ const FeaturedStores = ({ isFetching, homePageData, setUseDisplayStores }) => {
 												</div>
 											</div>
 										);
-									})}
+									})}*/}
 									<bdi
 										className={
 											stores?.content_section4?.length <

@@ -73,7 +73,7 @@ const WhatWeOfferData = [
 		id: 7,
 		alt: "دعم فني متخصص",
 		icon: HomeServiceSeven,
-		title: "⁠⁠إدارةالمتجر",
+		title: "دعم فني متخصص",
 		description:
 			"توفّر المنصة خدمات دعم فني متخصصة للمساعدة في حل المشكلات وتحسين الأداء....",
 	},

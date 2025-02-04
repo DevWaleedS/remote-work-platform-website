@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import PartnerBox from "./PartnerBox.jsx";
+import { DemoImage } from "../../../assets/Img/index.js";
 let PartnerSwiper = ({ PartnerDataSwiper }) => {
 	const isLoopEnabled = PartnerDataSwiper?.length >= 5;
 	return (
@@ -42,7 +43,7 @@ let PartnerSwiper = ({ PartnerDataSwiper }) => {
 						navigation={false}
 						modules={[Pagination, Navigation, Autoplay]}
 						className='swiper-partner'>
-						{PartnerDataSwiper.length
+						{/*{PartnerDataSwiper.length
 							? PartnerDataSwiper.map((el) => {
 									return (
 										<SwiperSlide key={el.id}>
@@ -50,7 +51,15 @@ let PartnerSwiper = ({ PartnerDataSwiper }) => {
 										</SwiperSlide>
 									);
 							  })
-							: null}
+							: null}*/}
+
+						{Array.from({ length: 5 })?.map((_, index) => {
+							return (
+								<SwiperSlide key={index}>
+									<PartnerBox Img={DemoImage} />
+								</SwiperSlide>
+							);
+						})}
 					</Swiper>
 				</div>
 			</div>

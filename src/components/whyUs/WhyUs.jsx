@@ -11,6 +11,11 @@ import { HowToStart } from "../../assets/Img";
 const WhyUs = () => {
 	const navigate = useNavigate();
 
+	function handleClick() {
+		navigate("/packages");
+		window.scroll(0, 0);
+	}
+
 	return (
 		<div className='why-us-box '>
 			<div className='why-us-body d-flex flex-md-row flex-column-reverse justify-content-center align-items-center'>
@@ -42,7 +47,7 @@ const WhyUs = () => {
 					</p>
 
 					<button
-						onClick={() => navigate("/packages")}
+						onClick={() => handleClick("")}
 						className='why-btn d-flex m-auto mt-4'>
 						اشترك الآن
 					</button>

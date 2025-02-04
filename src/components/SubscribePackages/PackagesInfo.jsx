@@ -6,17 +6,10 @@ import "./SubscribePackages.css";
 // components
 import PackagesFeatures from "./PackagesFeatures";
 
-// third party
-import { Link } from "react-router-dom";
-
 const PackagesInfo = ({ isLoading, packages, highestPricedPackage }) => {
 	// navigate to auth merchant by default
 	const navigateToMerchantRegister = () => {
-		window.location.href = "https://store.atlbha.com/auth/merchant";
-	};
-
-	const goUpWindow = () => {
-		window.scroll(0, 0);
+		window.location.href = "/";
 	};
 
 	return (

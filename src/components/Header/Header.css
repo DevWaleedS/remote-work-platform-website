@@ -274,6 +274,7 @@ header .register-btn.outline-btn:hover {
 
 	header .container .navbar .navbar-nav {
 		flex-direction: column;
+		gap: 16px;
 	}
 
 	header .navbar-collapse .navbar-nav a {

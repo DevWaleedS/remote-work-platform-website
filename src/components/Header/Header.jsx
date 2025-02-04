@@ -50,7 +50,7 @@ const Header = () => {
 
 	let location = useLocation();
 	const [isScrolled, setIsScrolled] = useState(false);
-	const [isShownMenu, setIsShownMenu] = useState(true);
+	const [isShownMenu, setIsShownMenu] = useState(false);
 
 	if (location.pathname === "/packagePage") {
 		document.querySelector("body").style.overflow = "hidden";
@@ -85,7 +85,7 @@ const Header = () => {
 	}, [location.pathname]);
 
 	useEffect(() => {
-		if (!isShownMenu) {
+		if (isShownMenu) {
 			document.body.style.overflow = "hidden";
 		} else {
 			document.body.style.overflow = "unset";
@@ -119,7 +119,7 @@ const Header = () => {
 
 						<Navbar.Toggle
 							aria-controls='navbarScroll'
-							onClick={() => setIsShownMenu(false)}>
+							onClick={() => setIsShownMenu(true)}>
 							<FiMenu />
 						</Navbar.Toggle>
 						<Navbar.Collapse id='navbarScroll' className=''>

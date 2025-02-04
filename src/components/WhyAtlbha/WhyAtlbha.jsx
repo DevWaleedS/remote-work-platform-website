@@ -10,6 +10,11 @@ import { useNavigate } from "react-router-dom";
 
 const WhyAtlbha = ({ hideBtn }) => {
 	const navigate = useNavigate();
+
+	function handleClick() {
+		navigate("/about-us");
+		window.scroll(0, 0);
+	}
 	return (
 		<div className='out-features p-main'>
 			<div className='container'>
@@ -39,7 +44,7 @@ const WhyAtlbha = ({ hideBtn }) => {
 						</p>
 
 						{hideBtn ? null : (
-							<button onClick={() => navigate("/about-us")} className='why-btn'>
+							<button onClick={() => handleClick()} className='why-btn'>
 								معرفة المزيد
 							</button>
 						)}

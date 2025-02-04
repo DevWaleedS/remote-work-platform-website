@@ -284,7 +284,10 @@
 	}
 
 	.main-footer .box-right {
-		flex-direction: column;
+		flex-direction: column-reverse;
+		margin-bottom: 20px;
+	}
+	.subscribe-form {
 		margin-bottom: 20px;
 	}
 	.main-footer .box-right ul {

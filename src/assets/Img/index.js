@@ -1,9 +1,9 @@
-export { default as HandIcon } from "./hand.png";
 export { default as Logo } from "./logo.png";
 export { default as BrandsBg } from "./brands.png";
 export { default as VideoIMg } from "./img03.png";
 export { default as HowToStart } from "./how-to-start.png";
 export { default as ContactUsImg } from "./contact-us.png";
+export { default as DemoImage } from "./placeholderImage.png";
 
 /* home services */
 export { default as HomeServiceOne } from "./home-services/Service01.png";

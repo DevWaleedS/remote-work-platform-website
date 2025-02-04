@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ReviewBox from "./ReviewBox.jsx";
+import { DemoImage } from "../../../assets/Img/index.js";
 
 let ReviewSwiper = ({ DataReviewSwiper }) => {
 	const isLoopEnabled = DataReviewSwiper?.length >= 5;
@@ -42,7 +43,7 @@ let ReviewSwiper = ({ DataReviewSwiper }) => {
 						navigation={false}
 						modules={[Pagination, Navigation, Autoplay]}
 						className='swiper-review '>
-						{DataReviewSwiper.length
+						{/*{DataReviewSwiper.length
 							? DataReviewSwiper.map((el) => {
 									return (
 										<SwiperSlide key={el?.id}>
@@ -53,7 +54,18 @@ let ReviewSwiper = ({ DataReviewSwiper }) => {
 										</SwiperSlide>
 									);
 							  })
-							: null}
+							: null}*/}
+
+						{Array.from({ length: 5 })?.map((_, index) => {
+							return (
+								<SwiperSlide key={index}>
+									<ReviewBox
+										Img={DemoImage}
+										text={"ارشح هذه المنصة لكل من يبحث عن النجاح"}
+									/>
+								</SwiperSlide>
+							);
+						})}
 					</Swiper>
 				</div>
 			</div>

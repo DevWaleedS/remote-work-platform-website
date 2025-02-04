@@ -10,7 +10,7 @@ import "swiper/css/effect-fade";
 const HeroBanners = ({ homePageData, navigate }) => {
 	// navigate to auth/login by default
 	const navigateToMerchantRegister = () => {
-		window.location.href = "https://store.atlbha.com/compare-packages";
+		window.location.href = "/";
 	};
 
 	const slides = [
