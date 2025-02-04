@@ -21,7 +21,7 @@ const WebsitePages = ({
 	return (
 		<>
 			<Helmet>
-				<title>مُدَار | {Name} </title>
+				<title>منصة المعرفة للعمل عن بُعد | {Name} </title>
 				<meta name='description' content={shortDescription} />
 			</Helmet>
 			<div className='atlbha-academy'>

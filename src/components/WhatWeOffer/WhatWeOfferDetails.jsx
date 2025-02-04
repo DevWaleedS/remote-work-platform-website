@@ -9,7 +9,7 @@ const WhatWeOfferDetails = () => {
 	return (
 		<>
 			<Helmet>
-				<title>مُدَار | {whatWeOfferData?.title} </title>
+				<title>منصة المعرفة للعمل عن بُعد | {whatWeOfferData?.title} </title>
 				<meta name='description' content={whatWeOfferData?.description} />
 			</Helmet>
 			<div className='atlbha-academy'>

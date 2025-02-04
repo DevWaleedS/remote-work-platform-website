@@ -20,8 +20,6 @@ import HomeBox from "./PagesBox/HomeBox/HomeBox";
 import BlogBox from "./PagesBox/BlogBox/BlogBox";
 import DetailBlogBox from "./PagesBox/DetailBlogBox/DetailBlogBox";
 
-import StartBox from "./PagesBox/whyUs/WhyUs.jsx";
-
 import OwnerBox from "./OwnerBox/OwnerBox";
 import WebsitePages from "./WebsitePages/WebsitePages";
 
@@ -64,7 +62,6 @@ export {
 	BlogHero,
 	OwnerBox,
 	DetailBlogBox,
-	StartBox,
 	NotFoundData,
 	WebsitePages,
 	LoadingPage,

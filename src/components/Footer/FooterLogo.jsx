@@ -29,7 +29,7 @@ const FooterLogo = ({ logoFooter, linkWebsite }) => {
 					alt=''
 					loading='lazy'
 				/>*/}
-				<p className='logo footer-logo'> مُدَار</p>
+				<p className='logo footer-logo'> الشعار</p>
 			</a>
 
 			<ul>

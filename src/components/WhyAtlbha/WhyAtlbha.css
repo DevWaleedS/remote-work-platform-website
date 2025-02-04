@@ -3,16 +3,15 @@
 	flex: 1;
 }
 
-.why-text-content .why-title {
+.why-title {
 	font-size: 36px;
 	font-weight: 600;
 	margin-bottom: 26px;
 	color: var(--default-color-01);
 }
 
-.why-text-content .why-text {
-	font-size: 22px;
-	line-height: 1.6;
+.why-text {
+	font-size: 20px;
 	color: var(--default-color-02);
 	font-weight: 400;
 }

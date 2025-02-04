@@ -32,15 +32,19 @@ const WhyAtlbha = ({ hideBtn }) => {
 							className='position-relative why-video-wrapper m-auto d-flex d-md-none justify-content-center align-items-center'
 							data-aos='fade-up-right'
 							data-aos-once='true'>
-							<img src={VideoIMg} alt='لماذا مُدَار ؟' loading='lazy' />
+							<img
+								src={VideoIMg}
+								alt='لماذا منصة المعرفة للعمل عن بُعد ؟'
+								loading='lazy'
+							/>
 						</div>
 						<p className='why-text'>
 							{" "}
-							مُدَار هو منصتك المتكاملة لإدارة الموظفين عن بُعد بكفاءة وسهولة.
-							✨ <br />
-							وفّر وقتك من خلال أدوات ذكية لمتابعة الأداء، تنظيم المهام، وإدارة
-							الرواتب بسلاسة. سواء كنت تدير فريقًا صغيرًا أو مؤسسة كبيرة، مُدَار
-							يمنحك التحكم الكامل من أي مكان!
+							منصة المعرفة للعمل عن بُعد هي منصتك المتكاملة لإدارة الموظفين عن
+							بُعد بكفاءة وسهولة. وفّر وقتك من خلال أدوات ذكية لمتابعة الأداء،
+							تنظيم المهام، وإدارة الرواتب بسلاسة. سواء كنت تدير فريقًا صغيرًا
+							أو مؤسسة كبيرة، منصة المعرفة للعمل عن بُعد يمنحك التحكم الكامل من
+							أي مكان!
 						</p>
 
 						{hideBtn ? null : (
@@ -54,7 +58,11 @@ const WhyAtlbha = ({ hideBtn }) => {
 						className='position-relative why-video-wrapper m-auto d-md-flex d-none justify-content-center align-items-center'
 						data-aos='fade-up-right'
 						data-aos-once='true'>
-						<img src={VideoIMg} alt='لماذا مُدَار ؟' loading='lazy' />
+						<img
+							src={VideoIMg}
+							alt='لماذا منصة المعرفة للعمل عن بُعد ؟'
+							loading='lazy'
+						/>
 					</div>
 				</section>
 			</div>

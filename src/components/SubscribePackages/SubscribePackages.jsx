@@ -4,6 +4,7 @@ import "./SubscribePackages.css";
 import PackagesInfo from "./PackagesInfo";
 import { useGetSubscribePackagesQuery } from "../../RTK/Api/subscribePackagesApi";
 import LoadingPage from "../LoadingPage/LoadingPage";
+import MainTitle from "../MainTitle/MainTitle";
 
 const SubscribePackages = () => {
 	const { data: packages, isLoading } = useGetSubscribePackagesQuery();
@@ -31,6 +32,7 @@ const SubscribePackages = () => {
 	return (
 		<>
 			<div className='package-box '>
+				<MainTitle text={"باقات الأشتراك"} />
 				{isLoading ? (
 					<LoadingPage />
 				) : (

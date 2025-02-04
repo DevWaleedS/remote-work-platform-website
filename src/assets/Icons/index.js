@@ -29,3 +29,4 @@ export { ReactComponent as SvgVideo } from "./ico - 24 - audiovisual - play_circ
 export { ReactComponent as PageNotFound } from "./page_not_found.svg";
 export { ReactComponent as SuccessCheckoutIcon } from "./successCheckout.svg";
 export { ReactComponent as FailedCheckoutIcon } from "./failedCheckout.svg";
+export { ReactComponent as Vision2030 } from "./vision-2030-img.svg";

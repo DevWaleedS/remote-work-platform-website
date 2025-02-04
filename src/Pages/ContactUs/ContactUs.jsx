@@ -89,10 +89,10 @@ const ContactUs = () => {
 	return (
 		<>
 			<Helmet>
-				<title>مُدَار | تواصل معنا</title>
+				<title>منصة المعرفة للعمل عن بُعد | تواصل معنا</title>
 				<meta
 					name='description'
-					content='ابدأ مع مُدَار بوابتك للتجارة الإلكترونية'
+					content='ابدأ مع منصة المعرفة للعمل عن بُعد بوابتك للتجارة الإلكترونية'
 				/>
 			</Helmet>
 			<div className='contact-us-page'>

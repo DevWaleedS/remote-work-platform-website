@@ -42,7 +42,7 @@ const DetailBlogBox = () => {
 		<>
 			<Helmet>
 				<title>
-					مُدَار |
+					منصة المعرفة للعمل عن بُعد |
 					{postDetails?.seo_title
 						? postDetails?.seo_title
 						: postDetails?.title || ""}

@@ -43,7 +43,7 @@ function CourseDetails() {
 	return (
 		<>
 			<Helmet>
-				<title>مُدَار | {`${currentCourse?.name}`} </title>
+				<title>منصة المعرفة للعمل عن بُعد | {`${currentCourse?.name}`} </title>
 				<meta name='description' content={`${currentCourse?.name}`} />
 			</Helmet>
 

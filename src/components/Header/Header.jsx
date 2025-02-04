@@ -114,7 +114,7 @@ const Header = () => {
 								onClick={() => navigate("/")}
 								style={{ cursor: "pointer" }}
 							/>*/}
-							<p className='logo main-logo'> مُدَار</p>
+							<p className='logo main-logo'> الشعار</p>
 						</Navbar.Brand>
 
 						<Navbar.Toggle

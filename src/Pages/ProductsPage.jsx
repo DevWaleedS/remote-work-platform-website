@@ -19,7 +19,7 @@ const ProductsPage = () => {
 	return (
 		<>
 			<Helmet>
-				<title>مُدَار | {pageTitle}</title>
+				<title>منصة المعرفة للعمل عن بُعد | {pageTitle}</title>
 				<meta name='description' content={pageTitle} />
 			</Helmet>
 

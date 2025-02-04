@@ -22,8 +22,7 @@ import "swiper/css/pagination";
 // css styles
 import "./HomeBox.css";
 
-// Icons
-import { MainTitle } from "../../index";
+// components
 import WhyUs from "../../whyUs/WhyUs";
 
 const HomeBox = ({
@@ -50,7 +49,6 @@ const HomeBox = ({
 			{/* ============= Our Packages ===================== */}
 			<div className='our-package '>
 				<div className='container'>
-					<MainTitle text={"باقات مُدَار"} />
 					<SubscribePackages />
 				</div>
 			</div>
@@ -58,29 +56,37 @@ const HomeBox = ({
 			<WhyUs />
 
 			{/* ============= Our Partners ===================== */}
-			{homePageData?.partners?.length > 0 ? (
+			{/*{homePageData?.partners?.length > 0 ? (
 				<>
-					<MainTitle text={"شركاء النجاح"} />
 					<PartnerSwiper PartnerDataSwiper={homePageData?.partners} />
 				</>
 			) : null}
+*/}
 
-			{/* ============= Featured Stores ===================== */}
-			{homePageData?.content_section4?.length > 0 ? (
+			<PartnerSwiper PartnerDataSwiper={homePageData?.partners} />
+
+			{/*{homePageData?.content_section4?.length > 0 ? (
 				<FeaturedStores
 					isFetching={isFetching}
 					homePageData={homePageData}
 					setUseDisplayStores={setUseDisplayStores}
 				/>
-			) : null}
+			) : null}*/}
+
+			<FeaturedStores
+				isFetching={isFetching}
+				homePageData={homePageData}
+				setUseDisplayStores={setUseDisplayStores}
+			/>
 
 			{/* ============= Our Reviews ===================== */}
-			{homePageData?.comment?.length > 0 ? (
+			{/*{homePageData?.comment?.length > 0 ? (
 				<>
-					<MainTitle text={"قالوا عنا"} />
 					<ReviewSwiper DataReviewSwiper={homePageData?.comment} />
 				</>
-			) : null}
+			) : null}*/}
+
+			<ReviewSwiper DataReviewSwiper={homePageData?.comment} />
 		</>
 	);
 };

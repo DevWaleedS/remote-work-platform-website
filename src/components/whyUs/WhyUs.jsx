@@ -20,27 +20,36 @@ const WhyUs = () => {
 		<div className='why-us-box '>
 			<div className='why-us-body d-flex flex-md-row flex-column-reverse justify-content-center align-items-center'>
 				<div
-					className='why-us-img d-row-flex d-none'
+					className='why-us-img d-md-inline-block d-none'
 					data-aos-once='true'
 					data-aos='fade-down'
 					data-aos-delay='400'>
-					<img src={HowToStart} alt='ليش تختار مُدَار' loading='lazy' />
+					<img
+						src={HowToStart}
+						alt='ليش تختار منصة المعرفة للعمل عن بُعد'
+						loading='lazy'
+					/>
 				</div>
 
 				<section className='why-us-text'>
 					<div className='info'>
-						<h1>ليش تختار مُدَار</h1>
+						<h1>ليش تختار منصة المعرفة للعمل عن بُعد</h1>
 					</div>
 					<p data-aos-once='true' data-aos='fade-left' data-aos-delay='500'>
-						مع منصة <span className='special-word'> مُدَار </span> يمكنك إدارة
-						فريقك بكفاءة من أي مكان! نوفر لك أدوات ذكية لتوظيف الموظفين، متابعة
-						الأداء،
+						مع منصة{" "}
+						<span className='special-word'> المعرفة للعمل عن بُعد </span> يمكنك
+						إدارة فريقك بكفاءة من أي مكان! نوفر لك أدوات ذكية لتوظيف الموظفين،
+						متابعة الأداء،
 						<div
-							className='why-us-img d-row-none d-flex'
+							className='why-us-img d-md-none d-inline-block'
 							data-aos-once='true'
 							data-aos='fade-down'
 							data-aos-delay='400'>
-							<img src={HowToStart} alt='ليش تختار مُدَار' loading='lazy' />
+							<img
+								src={HowToStart}
+								alt='ليش تختار منصة المعرفة للعمل عن بُعد'
+								loading='lazy'
+							/>
 						</div>
 						تنظيم المهام، وإدارة الرواتب بسهولة. ✨ بالإضافة إلى ذلك، تعزز
 						منصتنا التواصل بين الفريق، مما يضمن إنتاجية أعلى وانسيابية في العمل.
