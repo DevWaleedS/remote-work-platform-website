@@ -64,12 +64,13 @@ header.scrolled .container .navbar .navbar-toggler.collapsed svg {
 header .container .navbar .navbar-brand {
 	padding: 0;
 	padding-left: 20px;
-	width: 180px;
+	width: 230px;
 	margin: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 header .container .navbar .navbar-brand svg,
@@ -201,7 +202,7 @@ header .register-btn.outline-btn:hover {
 @media (max-width: 1400px) and (min-width: 991px) {
 	header .container .navbar .navbar-brand {
 		padding-left: 0px;
-		width: 120px;
+		width: 140px;
 	}
 }
 
@@ -263,9 +264,9 @@ header .register-btn.outline-btn:hover {
 		display: block;
 	}
 
-	.logo {
-		font-weight: 500;
-		font-size: 32px;
+	header .container .navbar .navbar-brand {
+		padding-left: 0px;
+		width: 140px;
 	}
 
 	.navbar-collapse.show {

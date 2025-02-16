@@ -13,7 +13,7 @@ import { IoMdClose } from "react-icons/io";
 
 // Context
 import AppContext from "../../Context/AppContext";
-import { MainLogo } from "../../assets/Img";
+import { MainLogo, FooterLogo } from "../../assets/Img";
 
 const links = [
 	{
@@ -110,12 +110,15 @@ const Header = () => {
 				}`}>
 				<div className='container'>
 					<Navbar expand='lg'>
-						<Navbar.Brand>
-							{/*<Logo
-								onClick={() => navigate("/")}
-								style={{ cursor: "pointer" }}
-							/>*/}
-							<img src={MainLogo} alt='شعار شركة المعرفة لتقنية المعلومان' />
+						<Navbar.Brand onClick={() => navigate("/")}>
+							<img
+								src={
+									isScrolled || location.pathname !== "/"
+										? MainLogo
+										: FooterLogo
+								}
+								alt='شعار شركة المعرفة لتقنية المعلومان'
+							/>
 						</Navbar.Brand>
 
 						<Navbar.Toggle
