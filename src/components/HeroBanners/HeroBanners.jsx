@@ -6,7 +6,7 @@ import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import { Banner01 } from "../../assets/Img";
+import { Banner01, Banner02 } from "../../assets/Img";
 
 const HeroBanners = ({ homePageData, navigate }) => {
 	// navigate to auth/login by default
@@ -15,10 +15,9 @@ const HeroBanners = ({ homePageData, navigate }) => {
 	};
 
 	const slides = [
-		// homePageData?.slider1,
 		{ id: 1, image: Banner01 },
-		// homePageData?.slider1,
-		// homePageData?.slider1,
+		{ id: 2, image: Banner02 },
+		{ id: 3, image: Banner01 },
 	].filter(Boolean);
 
 	const isLoopEnabled = slides.length >= 2; // Enable loop only if enough slides
@@ -29,7 +28,7 @@ const HeroBanners = ({ homePageData, navigate }) => {
 				effect='fade'
 				loop={isLoopEnabled} // Dynamically enable loop
 				autoplay={{
-					delay: 6000,
+					delay: 4000,
 					disableOnInteraction: false,
 				}}
 				pagination={{
@@ -44,7 +43,6 @@ const HeroBanners = ({ homePageData, navigate }) => {
 							className='swiper_image'
 							style={{
 								backgroundImage: `url(${slide.image})`,
-								cursor: index > 0 ? "pointer" : "default",
 							}}>
 							<div className='content'>
 								<h1>شركة المعرفة لتقنية المعلومات</h1>

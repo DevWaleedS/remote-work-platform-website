@@ -6,6 +6,7 @@ export { default as HowToStart } from "./how-to-start.png";
 export { default as ContactUsImg } from "./contact-us.png";
 export { default as DemoImage } from "./placeholderImage.png";
 export { default as Banner01 } from "./banner-01.jpg";
+export { default as Banner02 } from "./courses_image-01.jpeg";
 
 /* home services */
 export { default as HomeServiceOne } from "./home-services/Service01.png";
