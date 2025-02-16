@@ -13,6 +13,7 @@ import { IoMdClose } from "react-icons/io";
 
 // Context
 import AppContext from "../../Context/AppContext";
+import { MainLogo } from "../../assets/Img";
 
 const links = [
 	{
@@ -114,7 +115,7 @@ const Header = () => {
 								onClick={() => navigate("/")}
 								style={{ cursor: "pointer" }}
 							/>*/}
-							<p className='logo main-logo'> الشعار</p>
+							<img src={MainLogo} alt='شعار شركة المعرفة لتقنية المعلومان' />
 						</Navbar.Brand>
 
 						<Navbar.Toggle

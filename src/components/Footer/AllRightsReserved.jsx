@@ -5,7 +5,7 @@ const AllRightsReserved = () => {
 		<div className='copyright-box container'>
 			<hr />
 			<h5>
-				جميع الحقوق محفوظة <span> لمنصة المعرفة للعمل عن بُعد </span>
+				جميع الحقوق محفوظة <span> لشركة المعرفة لتقنية المعلومات </span>
 			</h5>
 		</div>
 	);

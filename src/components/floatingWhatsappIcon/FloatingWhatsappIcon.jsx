@@ -16,7 +16,7 @@ const FloatingWhatsappIcon = ({ logo }) => {
 				direction: "ltr",
 			}}
 			className='floating-whatsapp-icon'
-			accountName='منصة المعرفة للعمل عن بُعد'
+			accountName='شركة المعرفة لتقنية المعلومات'
 			statusMessage='سيتم التواصل في أقرب وقت'
 			chatMessage='مرحباً، كيف يمكنني مساعدتك؟'
 			placeholder='أكتب رسالتك هنا...'

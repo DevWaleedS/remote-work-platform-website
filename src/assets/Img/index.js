@@ -1,4 +1,5 @@
-export { default as Logo } from "./logo.png";
+export { default as MainLogo } from "./main-logo.png";
+export { default as FooterLogo } from "./footer-logo.png";
 export { default as BrandsBg } from "./brands.png";
 export { default as VideoIMg } from "./img03.png";
 export { default as HowToStart } from "./how-to-start.png";

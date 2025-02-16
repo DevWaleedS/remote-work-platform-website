@@ -21,7 +21,7 @@ import { Home } from "./index";
 
 // RTK Query
 import { useGetHomePageDataQuery } from "../RTK/Api/homeApi";
-import { Logo } from "../assets/Img";
+import { FooterLogo } from "../assets/Img";
 
 const Blog = React.lazy(() => import("./Blog"));
 
@@ -32,11 +32,11 @@ const AboutUs = React.lazy(() => import("./AboutUs/AboutUs"));
 const Services = React.lazy(() => import("./Services/Services"));
 const PackagesPage = React.lazy(() => import("./PackagesPage/PackagesPage"));
 
-const SuccessCheckOut = React.lazy(() =>
-	import("../components/PaymentStatus/SuccessCheckout")
+const SuccessCheckOut = React.lazy(
+	() => import("../components/PaymentStatus/SuccessCheckout")
 );
-const FailedCheckout = React.lazy(() =>
-	import("../components/PaymentStatus/FailedCheckout")
+const FailedCheckout = React.lazy(
+	() => import("../components/PaymentStatus/FailedCheckout")
 );
 
 const ContactUs = React.lazy(() => import("./ContactUs/ContactUs"));
@@ -202,14 +202,14 @@ const AllPages = () => {
 
 						registrationMarketer={homePageData?.registration_marketer}
 						linkWebsite={homePageData?.website_socialmedia}
-						logoFooter={homePageData?.logo_footer}
+						
 						homeFooter={homePageData?.footer}
 					/>*/}
 
-					<FooterOverlay />
+					<FooterOverlay logoFooter={FooterLogo} />
 				</BrowserRouter>
 
-				<FloatingWhatsappIcon logo={Logo} />
+				<FloatingWhatsappIcon logo={FooterLogo} />
 			</div>
 		</>
 	);

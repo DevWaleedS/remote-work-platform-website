@@ -31,14 +31,13 @@ const FooterLogo = ({ logoFooter, linkWebsite }) => {
 	return (
 		<div className='box-left'>
 			<a className='main-footer__logo' href='#0'>
-				{/*<img
+				<img
 					width='100%'
 					height='100%'
 					src={logoFooter}
 					alt=''
 					loading='lazy'
-				/>*/}
-				<p className='logo footer-logo'> الشعار</p>
+				/>
 			</a>
 
 			<ul>

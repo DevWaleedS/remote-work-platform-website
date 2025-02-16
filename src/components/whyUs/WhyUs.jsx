@@ -27,7 +27,7 @@ const WhyUs = () => {
 					data-aos-delay='400'>
 					<img
 						src={HowToStart}
-						alt='ليش تختار منصة المعرفة للعمل عن بُعد'
+						alt='ليش تختار شركة المعرفة لتقنية المعلومات'
 						loading='lazy'
 						style={{ mixBlendMode: "multiply" }}
 					/>
@@ -38,7 +38,7 @@ const WhyUs = () => {
 
 				<section className='why-us-text'>
 					<div className='info'>
-						<h1>ليش تختار منصة المعرفة للعمل عن بُعد</h1>
+						<h1>ليش تختار شركة المعرفة لتقنية المعلومات</h1>
 					</div>
 					<p data-aos-once='true' data-aos='fade-left' data-aos-delay='500'>
 						مع منصة{" "}
@@ -52,7 +52,7 @@ const WhyUs = () => {
 							data-aos-delay='400'>
 							<img
 								src={HowToStart}
-								alt='ليش تختار منصة المعرفة للعمل عن بُعد'
+								alt='ليش تختار شركة المعرفة لتقنية المعلومات'
 								loading='lazy'
 							/>
 							<div className='position-absolute vision2030-icon'>

@@ -10,7 +10,7 @@ function Faqs() {
 	return (
 		<>
 			<Helmet>
-				<title>منصة المعرفة للعمل عن بُعد | الأسئلة الشائعة</title>
+				<title>شركة المعرفة لتقنية المعلومات | الأسئلة الشائعة</title>
 				<meta name='الأسئلة الشائعة' content='الأسئلة الشائعة' />
 			</Helmet>
 			<div className='faqs-page'>

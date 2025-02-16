@@ -36,7 +36,7 @@ const SelectUserType = ({ userType, setUserType }) => {
 		<div className='select-user-type text-end mb-5'>
 			<h4 className='text-end '>
 				هل لديك حساب لدي{" "}
-				<span className='atlbha-title'>منصة المعرفة للعمل عن بُعد</span>
+				<span className='atlbha-title'>شركة المعرفة لتقنية المعلومات</span>
 			</h4>
 
 			<ul className=' d-flex justify-content-start align-items-center gap-2'>
