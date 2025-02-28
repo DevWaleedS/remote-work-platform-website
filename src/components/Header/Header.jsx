@@ -99,7 +99,7 @@ const Header = () => {
 
 	// navigate to auth/login by default
 	const navigateToMerchantRegister = () => {
-		window.location.href = "/";
+		window.location.href = "https://client-admin.b2030.net/register";
 	};
 
 	return (

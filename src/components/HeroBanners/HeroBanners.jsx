@@ -11,7 +11,7 @@ import { Banner01, Banner02 } from "../../assets/Img";
 const HeroBanners = ({ homePageData, navigate }) => {
 	// navigate to auth/login by default
 	const navigateToMerchantRegister = () => {
-		window.location.href = "/";
+		window.location.href = "https://client-admin.b2030.net/register";
 	};
 
 	const slides = [

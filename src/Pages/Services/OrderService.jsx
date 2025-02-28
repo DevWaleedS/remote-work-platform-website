@@ -444,7 +444,7 @@ function OrderService({ openOrderServiceModal, setOpeOrderServiceModal, id }) {
 																	<span className=''>ليس لديك حساب؟ </span>
 																	<a
 																		className=''
-																		href='https://store.atlbha.com/auth/merchant'>
+																		href='https://client-admin.b2030.net/register'>
 																		التسجيل في المنصه
 																	</a>
 																</div>
